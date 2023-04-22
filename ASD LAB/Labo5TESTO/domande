@@ -1,0 +1,13 @@
+(1) Sono identichè poichè h1 ed h2, nel caso specifico di ascii.txt, effettueranno le stesse operazioni.
+Essendo ascii.txt composto da soli singoli caratteri lowercase, la funzione h1 opera sul primo
+e unico char, e la funzione h2 per forza di cose, opera sul primo e unico char.
+
+(2) Al contrario di ascii.txt, d.txt contiene delle stringhe effettive, dunque h2 differisce da h1.
+Tramite h1 posso trovare al più 26 diversi indirizzi per ogni chiave; mentre h2 26*strlen
+
+(3) h2 è migliore perchè, come detto al punto (2), offre un range maggiore di indirizzamenti
+differenti (ES di dev.std. con h2: 17.819651 26.413891 7.019803 VS con h1: 1544.059814 704.940735 223.938599)
+
+(4)
+
+
