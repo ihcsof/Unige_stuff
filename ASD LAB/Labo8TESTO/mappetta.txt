@@ -1,0 +1,11 @@
+Asti Alessandria 35
+Varazze Savona 17
+Genova Varazze 27
+Alessandria Masone 45
+Masone Genova 14
+Genova Serravalle 50
+Serravalle Tortona 18
+Tortona Alessandria 21
+Genova Chiavari 38
+Tortona Voghera 20
+0
