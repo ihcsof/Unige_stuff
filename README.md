@@ -1,3 +1,6 @@
+Dentro la cartella APPUNTI ci sono gli appunti integrali di molti corsi, nonché schemi, riassunti e domande.
+Fuori dalla cartella APPUNTi ci sono alcuni codici.
+
 NB1: non mi ritengo responsabile per copiature di codice.
 Ho condiviso il materiale nello spirito dell'Open Source e della sana ispirazione per migliorarsi
 
