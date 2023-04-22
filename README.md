@@ -1,3 +1,5 @@
-Se vuoi supportarmi fatti un giro sul mio instagram: lorenzofoschi
+IG: @lorenzofoschi
+Il mio libro è acquistabile su Amazon qui: https://amzn.eu/d/1cegu61
 
-Ci sono tanti miei progetti, e persino il mio libro (acquistabile su Amazon qui: https://amzn.eu/d/1cegu61)
+NB: non mi ritengo responsabile per copiature di codice.
+Ho condiviso il materiale nello spirito dell'Open Source e della sana ispirazione per migliorarsi
