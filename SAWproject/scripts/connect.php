@@ -1,8 +1,8 @@
 <?php
     $dbserver = "localhost";
-    $user = "S4989646";
-    $pwd = "c++enjoyer69";
-    $dbname = "S4989646";
+    $user = "";
+    $pwd = "ehNoVoleviEh";
+    $dbname = "";
 
     mysqli_report(MYSQLI_REPORT_OFF);
 
