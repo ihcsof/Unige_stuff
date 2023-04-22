@@ -1,0 +1,23 @@
+Alcuni test che potete eseguire, con relativo risultato che dovreste ottenere
+
+( ( ( 5 + 6 ) + ( 12 - 3 ) ) - 25 ) 
+Risultato che dovete ottenere: -5
+
+( ( ( ( 51 + 64 ) + ( 112 - 43 ) ) - 215 ) + ( ( ( 8 + 22 ) + ( 98 + 7 ) ) - 5 ) )
+Risultato che dovete ottenere: 99
+
+((( 5 + 6 ) + ( 12 - 3 )) - 25 ) 
+Risultato che dovete ottenere: errore lessicale (perché non ci sono gli spazi tra le parentesi)
+
+( ( ( 5 + 6 ) + ( 12 - 3 ) ) - pippo )
+Risultato che dovete ottenere: errore lessicale (perché "pippo" non indica un token ammissibile)
+
+( 8 9 
+Risultato che dovete ottenere: errore sintattico (perché i token sono corretti, ma la formula non è ben formata rispetto alla sintassi delle espressioni) 
+
+9 + 12
+Risultato che dovete ottenere: errore sintattico (perché i token sono corretti, ma la formula non è ben formata rispetto alla sintassi delle espressioni: mancano le parentesi)
+
+( ( ( 5 + 6 ) + ( 12 - 3 ) ) - ( + - ( 
+Risultato che dovete ottenere: errore sintattico (perché i token sono corretti, ma la formula non è ben formata rispetto alla sintassi delle espressioni: mancano le parentesi)
+

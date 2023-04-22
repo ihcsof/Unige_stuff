@@ -1,0 +1,12 @@
+mammalia
+mammalia eutheria
+eutheria primates  
+primates haplorrhini
+haplorrhini catarrhini platyrrhini
+catarrhini cercopithecoidea hominoidea
+hominoidea hominidae hylobatidae
+hominidae homininae ponginae 
+homininae gorilla homo pan
+homo homoAbilis homoErectus homoSapiens
+homoSapiens homoSapiensNeanderthaliensis homoSapiensSapiens
+ponginae pongo
