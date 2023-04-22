@@ -1,0 +1,30 @@
+Questa directory contiene una serie di script Bash per la generazione
+di diagrammi di Throughput in funzione della dimensione dei messaggi
+per le versioni UDP e TCP di ping-pong.
+
+USO:
+lanciare lo script mkfile.bash con quattro parametri numerici:
+- la dimensione minima dei messaggi in Byte
+- la dimensione massima dei messaggi UDP in Byte
+- la dimensione massima dei messaggi TCP in Byte
+- il numero di ripetizioni del ping-pong
+seguiti da indirizzo IP e porta del server pong col quale ci si vuole
+connettere.
+
+Questo genera automaticamente un Makefile nella directory ../data.
+Successivamente, lanciando da questa directory il comando make
+vengono effettuate tutte le misure mancanti (gli esperimenti non vengono
+ripetuti se non dopo la cancellazione del relativo file di risultati)
+e poi viene creato il diagramma sotto forma di immagine in formato PNG
+utilizzando l'applicazione gnuplot.
+
+ESEMPIO:
+> ./mkfile.bash 32 32768 524288 501 webdev.dibris.unige.it 1491
+> cd ../data
+> make
+> xdg-open throughput.png &
+
+Per visualizzare l'istogramma dei RTT usare lo script print_histogram.bash
+al quale devono essere passati due parametri, il protocollo ("udp" oppure
+"tcp") e la dimensione in Byte dei messaggi.
+

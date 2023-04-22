@@ -1,0 +1,55 @@
+INCAPACHE (Is Not Comparable to APACHE)
+N.B. il nome si pronuncia "incapaci" ;-)
+
+Programma sviluppato a supporto del laboratorio di
+Sistemi di Elaborazione e Trasmissione del corso di laurea
+in Informatica classe L-31 presso l'Universita` degli Studi di
+Genova.
+
+Copyright (C) 2012-2014,2016 by Giovanni Chiola <chiolag@acm.org>
+Copyright (C) 2015-2016 by Giovanni Lagorio <giovanni.lagorio@unige.it>
+Copyright (C) 2017-2021 by Giovanni Chiola <chiolag@acm.org>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+--------------------------------------
+
+Implementazione di un sottoinsieme del protocollo HTTP, nelle versioni
+5.0 e 5.1: la prima gestisce una sola richiesta per ogni connessione
+(con HTTP/1.0), mentre la seconda gestisce piu` richieste HTTP/1.1
+successive sulla stessa connessione in modalita` "pipeline", lanciando
+in esecuzione piu` thread di risposta per velocizzare l'interazione
+col browser.
+
+Il makefile crea un binario di proprieta` dell'utente root con il flag
+setuserid attivato, tramite sudo, quindi e` necessario avere i privilegi
+di amministrazione (=il comando make potrebbe richiedere la vostra
+password).
+Questo serve per poter eseguire la chiamata di sistema chroot()
+e restringere i file che possono essere inviati al browser al
+solo contenuto della directory www.
+
+Se, per qualsiasi ragione, non volete utilizzare l'account di root,
+e` possibile generare un file che non richiede il flag setuserid
+(ovviamente non potra` fare chroot) tramite appositi flag di compilazione
+(vedi Makefile).
+
+L'eseguibile lancia in background un secondo processo, corrispondente
+al comando "file", per ottenere il "mime-type" da restituire nell'header
+della risposta.
+Questa informazione puo` essere generata lanciando da shell il
+comando:
+file -i nomefile
+
+Per lanciare il programma e` necessario specificare la directory www-root
+e, opzionalmente, la porta TCP su cui mettersi in ascolto.
+Per esempio:
+bin/incapache www-root 80
+
+Il server usa il meccanismo dei Cookie per assegnare un identificatore
+a ogni utente che lo contatta, e successivamente conta il numero di
+richieste provenienti dallo stesso client.
+
