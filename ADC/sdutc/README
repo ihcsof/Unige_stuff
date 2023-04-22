@@ -1,0 +1,87 @@
+Stardate UTC: Captain's Log.
+
+Questo esercizio si basa sulla rappresentazione standard del tempo
+in un sistema POSIX gestita mediante le funzioni time(), gmtime() e
+strftime(), oltre che sulla sincronizzazione mediante gli "advisory
+lock" ottenuti richiamando le system call open(), close() e
+fcntl(fd,F_SETLKW,...);
+ogni altro riferimento ad opere letterarie, televisive e/o
+cinematografiche e` puramente casuale ... ;-)
+
+Programma sviluppato a supporto del laboratorio di
+Architettura dei Calcolatori del corso di laurea triennale
+in Informatica classe L-31 presso l'Universita` degli Studi di
+Genova, anno accademico 2020/2021.
+
+Copyright (C) 2013-2021 by Giovanni Chiola <chiolag@acm.org>
+
+Questi file sono coperti dalla licenza d'uso GNU GPL (General Public
+License) versione 2 o successiva (a discrezione dell'utilizzatore).
+
+--------------------------------------
+
+Terzo esercizio di programmazione in C mirato alla comprensione
+della rappresentazione del tempo e dell'accesso a file condivisi
+da parte di piu` processi.
+
+Come al solito la compilazione dei programmi avviene con l'ausilio
+dell'applicazione "make" e dell'ambiente non grafico fornito dalla
+shell "bash".
+
+Il Makefile contiene anche i target "clean" e "tgz", utili per cancellare
+i file intermedi ed eseguibili e per creare un archivio "tar gzip"
+contenente solo i sorgenti. Quest'ultimo dovra` essere usato per preparare
+il file ".tgz" da consegnare su Aulaweb al termine delle esercitazioni.
+
+Lo sviluppo della prima parte del laboratorio (obbligatoria) prevede
+il completamento del file "write_log.c" nelle parti evidenziate dai
+commenti:
+    /*** TO BE DONE START ***/
+    /*** TO BE DONE END ***/
+in modo che l'eseguibile compilato si comporti esattamente come
+l'eseguibile di riferimento "gc_write_log_Ubuntu20.04_64" fornito
+nell'archivio insieme al sorgente incompleto.
+Nel caso in cui non fosse possibile eseguire l'eseguibile di riferimento
+(compilato con gcc su un processore Intel a 64 bit con Ubuntu 20.04)
+sulla vostra macchina, potete far riferimento al file "captains_log.esempio"
+per vedere il formato di rappresentazione della data da usare.
+In particolare, si richiede di:
+- formattare la data corrente nel formato ASCII standard UTC
+  definito nell'RFC3339;
+- troncare il messaggio passato come parametro e appenderlo al file
+  di Log preceduto dalla data corrente
+- acquisire un "adisory lock" in scrittura sul file di Log usando le
+  chiamate di systema POSIX
+- appendere il nuovo messaggio datato al file
+- rilasciare il lock e terminare il programma immediatamente oppure
+  con un ritardo arbitrario (aspettando il consenso dell'utilizzatore)
+
+Per verificare il corretto funzionamento del meccanismo dei "lock"
+occorre ritardare l'esecuzione del codice, e questo puo` essere ottenuto
+come segue:
+lanciate da tre shell diverse il programma "write_log" passando anche un
+terzo parametro oltre al secondo (che viene inserito nel log); quando "argc"
+assume un valore >2 il programma ritarda il rilascio del lock dopo la
+scrittura fino al momento in cui l'utente inserisce un "\n" sullo
+standard input; dovreste verificare che solo il primo programma chiede
+il consenso per terminare, mentre gli altri due rimangono in attesa;
+dopo il completamento del primo programma, viene sbloccato uno degli
+altri due che erano rimasti in attesa, mentre il terzo rimane in attesa,
+e cosi` via ...
+
+La seconda parte (opzionale) consiste nell'aggiunta di un ulteriore
+timestamp (sempre nel formato standard UTC) al fondo di ogni riga, in
+modo da registrare anche l'istante di scrittura della riga sul file
+(che puo` avvenire in ritardo a causa del meccanismo di locking in
+scrittura).
+Le parti da modificare sono evidenziate dai commenti:
+    /*** TO BE OPTIONALLY CHANGED START ***/
+    /*** TO BE OPTIONALLY CHANGED END ***/
+La difficolta` consiste nel gestire correttamente la lunghezza della stringa
+in modo da non mandare mai in overflow il buffer "string[128]", indipendentemente
+dalla lunghezza della stringa che il "Captain" vorrebbe aggiungere al Log.
+
+Buon divertimento con gli Advisory Lock e la rappresentazione del tempo UTC!
+
+Giovanni Chiola ;-)
+

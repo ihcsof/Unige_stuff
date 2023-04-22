@@ -1,0 +1,55 @@
+The Lord of the StRings: Episode 1
+
+Gli scopi di questo primo esercizio sono:
+- imparare a usare le funzioni di <stdio.h> printf() ecc. in C
+- capire cosa sono le stringhe, gli array di caratteri e i puntatori in C
+- cominciare a vedere la bash, sia in modalita` interattiva, sia in modalita`
+  script
+- cominciare a usare le applicazioni make, diff, gcc, rm e (sopratutto) man
+- imparare a non spaventarsi troppo davanti ad una richiesta di completamento
+  di un codice gia` parzialmente scritto ... ;-)
+
+Il pretesto e` quello di completare il sorgente "string_master.c" in modo
+che l'eseguibile ottenuto dalla compilazione generi esattamente lo stesso
+output dell'eseguibile di riferimento "gc_string_master".
+
+La verifica dell'uguaglianza dell'output puo` essere fatta in modo
+semi-automatico lanciando il comando:
+> make test_master
+e verificando manualmente il contenuto dei 4 file nominati "diff_*.txt" che
+vengono prodotti dallo script "check_master.bash".
+
+Nel caso in cui l'eseguibile di riferimento (compilato su una macchina a 64 bit
+sotto il sistema operativo Linux Ubuntu 20.04) non potesse essere mandato in
+esecuzione sulla vostra macchina, potete utilizzare il contenuto dei 4 file:
+"output_gc_string_master_*.txt" inclusi in questo archivio e adattare lo script
+"check_master.bash" in modo da sostituire l'esecuzione del programma col comando
+"cat" di uno di questi 4 file.
+
+Suggerimenti:
+1. utilizzare i file prodotti dalla applicazione "diff" lanciata nello
+   script "check_master.bash" per velocizzare la scrittura della parte
+   mancante di sorgente C.
+2. leggere con attenzione la parte finale del testo prodotto dall'eseguibile
+   "gc_string_master".
+
+AVVERTENZE:
+NON prendete il contenuto del file "string_master.c" come un esempio di
+"codice C scritto bene"!
+Questo codice e` scritto in maniera orrenda, e puo` semmai essere preso
+come esempio di come NON DOVREBBE MAI essere scritto un programma, dal
+punto di vista "estetico".
+La scelta di presentare un codice "volutamente brutto" serve per mettere
+in evidenza gli aspetti lessicali, sintattici e semantici del linguaggio.
+Dalla prossima settimana cercheremo di introdurre anche dei criteri
+"estetici" che possano rendere piu` gradevole la lettura e la comprensione
+del codice da parte del programmatore.
+Per il completamento dell'output, scrivere il programma in modo che stampi
+l'effettivo contenuto dell'array "q" dove richiesto, NON semplicemente la
+stringa dei 4 caratteri che vengono messi in output dall'eseguibile di
+riferimento.
+
+Per il momento e` tutto ragazzi, buon divertimento! :-)
+
+Giovanni Chiola, the String Master ;D
+

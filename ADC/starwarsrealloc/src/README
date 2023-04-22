@@ -1,0 +1,113 @@
+StarWars_the_return_of_the_Alloc ovvero *wars=realloc();
+
+N.B. ovviamente ci si riferisce al contenuto della libreria <stdlib.h>
+e in particolare alle funzioni malloc(), free(), calloc() e realloc();
+ogni altro riferimento ad opere letterarie e/o cinematografiche e`
+puramente casuale ... ;-)
+
+Programmi sviluppati a supporto del laboratorio di
+Architettura dei Calcolatori del corso di laurea triennale
+in Informatica classe L-31 presso l'Universita` degli Studi di
+Genova, anno accademico 2020/2021.
+
+Copyright (C) 2013-2021 by Giovanni Chiola <chiolag@acm.org>
+
+Questi file sono coperti dalla licenza d'uso GNU GPL (General Public
+License) versione 2 o successiva (a discrezione dell'utilizzatore).
+Nell'archivio e` contenuto il file "COPYING" che riporta il testo
+integrale di tale licenza (come richiesto dalla licenza stessa).
+
+--------------------------------------
+
+Esercizi di programmazione in C mirati alla comprensione della
+allocazione dinamica esplicita della memoria Heap e della differenza
+tra array in C ed elementi della classe vector in C++.
+
+Come al solito la compilazione dei programmi avviene con l'ausilio
+dell'applicazione "make" e dell'ambiente non grafico fornito dalla
+shell "bash". Tutti i programmi vengono compilati da shell col comando:
+> make
+
+Prima Settimana
+---------------
+Il primo esercizio consiste nel compilare ed eseguire il sorgente
+"malloc_play.c" e di trovare una spiegazione per il suo comportamento
+apparentemente bizzarro (leggendone il sorgente, osservandone l'output,
+e consultando il manuale nelle voci relative alle funzioni di libreria
+standard "calloc()", "malloc()", "realloc()" e "free()".
+Suggerimento: per eseguire da shell il programma in modo interattivo
+usare il comando:
+> ./malloc_play | less
+Per salvare l'output in un file e analizzarlo successivamente con calma:
+> ./malloc_play > nomefile
+Nel caso in cui il programma andasse in "segmentation fault" con i parametri
+di default definiti all'interno del sorgente, provate a cambiare i valori
+"min" e "max" passando esplicitamente un valore assoluto inferiore come
+secondo e terzo parametro dopo il pathname dell'eseguibile.
+Per esempio:
+> ./malloc_play 1 -8 50 | less
+I parametri di default sono adeguati per un processore a 64 con Ubuntu 20.04,
+ma possono non esserlo per macchine a 32 bit o con sistemi operativi diversi.
+La spiegazione del comportamento di "malloc_play" dovra` essere riassunta
+in una breve relazione, con particolare riferimento ai valori (uguali a
+o diversi da zero) stampati da questa applicazione sul suo standard output.
+Il primo esercizio e` obbligatorio.
+Nel caso ci fossero difficolta` tecniche insormontabili nel compilare e/o
+eseguire il programma su una piattaforma diversa da Linux, potete fare
+riferimento al contenuto del file "malloc_play.Ubuntu20.04_64bit.output"
+
+
+Seconda Settimana
+-----------------
+Il secondo esercizio consiste nel completamento del sorgente "vector.c".
+Si suggerisce di leggere prima il contenuto dei file "vector.h"
+e "test_vector.c" per cercare di comprendere il funzionamento della
+libreria "vector.o" (ottenibile compilando il file sorgente "vector.c").
+
+Il Makefile contiene anche i target "clean" e "tgz", utili per cancellare
+i file intermedi ed eseguibili e per creare un archivio "tar gzip"
+contenente solo i sorgenti. Quest'ultimo dovra` essere usato per preparare
+il file ".tgz" da consegnare su Aulaweb al termine delle esercitazioni.
+
+Lo sviluppo del secondo esercizio prevede una parte obbligatoria e una
+parte opzionale. La parte obbligatoria prevede:
+0. l'esecuzione dell'eseguibile di riferimento mediante i comandi da
+   shell: "./gc_test_vector_U20_04_64" (che ovviamente e` stato compilato
+   per un processore Intel X68 a 64 bit con sistema operativo  Ubuntu 20.04,
+   come suggerisce il nome) per vedere quali scritte deve produrre.
+1. il completamento del file sorgente "vector.c" inserendo le istruzioni
+   mancanti, evidenziate dai commenti:
+    /*** TO BE DONE START ***/
+    /*** TO BE DONE END ***/
+   in modo che la libreria si comporti esattamente come l'eseguibile di
+   riferimento.
+   Ulteriore suggerimento: man memcpy()
+2. la produzione del relativo eseguibile col comando "make"
+3. la verifica manuale del corretto funzionamento del programma,
+   eventualmente con l'ausilio del comando "diff", dopo aver rediretto
+   lo "stdout" su file, per esempio:
+   ./gc_test_vector > riferimento; ./test_vector > prova
+   diff riferimento prova
+In caso di difficolta` nel far girare l'eseguibile di riferimento su
+una piattaforma diversa da quella per cui e` stato compilato, potete
+far riferimento al contenuto del file "test_vector.expected_output".
+
+
+Terza Settimana
+---------------
+La parte opzionale del secondo esercizio consiste nell'aggiunta di un nuovo
+tipo di vector, con elementi di tipo "float":
+1. modifica dei due sorgenti "vector.h" e "vector.c" nelle parti
+   evidenziate dai commenti:
+    /*** TO BE OPTIONALLY CHANGED START ***/
+    /*** TO BE OPTIONALLY CHANGED END ***/
+2. lo sviluppo di un nuovo "main" di test, ricavato copiando e modificando
+   a piacere il sorgente "test_vector.c" in modo da verificare il corretto
+   funzionamento della libreria anche per i vector di tipo "float".
+3. il completamento del Makefile in modo da automatizzare la compilazione
+   anche del nuovo main() di test al punto 2 precedente.
+
+Buon divertimento con array, vector e realloc() !
+
+Giovanni Chiola ;-)
+

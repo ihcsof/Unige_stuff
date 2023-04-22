@@ -1,0 +1,9 @@
+Vector vc1 now contains 5 characters (capacity=8): ciao
+Vector vc2 now contains 9 characters (capacity=16): ciaociao
+Vector vc2 now contains 11 characters (capacity=16): ciao--ciao
+Vector vi1 now contains 10 integers:  0 1 2 3 4 5 6 7 8 9
+Vector vc2 now contains 21 characters (capacity=32): ciao-0123456789-ciao
+Vector vc2 now contains 5 characters (capacity=8): ciao
+Vector vd1 now contains 10 doubles (capacity=16):  9.5 8.5 6.5 5.5 3.14159 4.5 3.5 2.5 1.5 0.5
+Vector vd1 now contains 1 double (capacity=2):  6.28318
+Vector vi1 now contains 2 integers (capacity=4):  0 9

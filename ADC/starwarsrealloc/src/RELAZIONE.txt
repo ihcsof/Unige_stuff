@@ -1,0 +1,59 @@
+Lo scopo del programma è quello di "giocare" con le API POSIX per l'allocazione
+    dinamica della memoria: malloc, free, realloc,... viste a lezione.
+    Ricordiamo il loro scopo (non citando calloc che in questo
+    specifico programma non viene utilizzata).
+        - p = (int*)malloc(sizeof(int));
+        In questo esempio allochiamo uno spazio suffic. a contenere un intero
+        (utilizziamo l'operatore sizeof per assicurare portabilità su più sistemi)
+        e salviamo il suo indirizzo in un puntatore p.
+        Il cast è necessario, poichè malloc ritorna, a fini di generalità,
+        un puntatore di tipo void*
+        - free((void*)p); dealloca la zona di memoria puntata da p, che effettivamente
+        nella realtà non è esattamente uguale al nByte allocati esplicitamente.
+        Proprio per questo, free, utilizza l'informazione della size contenuta in un campo
+        header che era stato allocato precedentemente.
+        - p = (unsigned char*)realloc((void*)p, sz);
+        In questo esempio di realloc riportato dal codice, andiamo a riallocare lo spazio
+        puntato da p, riassegnandolo a p stesso (con nuova dimensione = sz).
+        Abbiamo notato a lezione che, in realtà, realloc è di per sè una generalizzazione
+        di malloc e free (malloc può essere implementata come p = realloc(NULL,dim) mentre
+        free può essere implementata come p = realloc(p,0);
+        Una nozione rilevante su realloc è la possibilità che essa si ritrovi a dover
+        cercare e riservare zone di memoria non immediatamente adiacenti a quelle
+        successive a p, nel caso (ad esempio) un altra malloc abbia occupato le suddette.
+        In quel caso il cambio di "zona puntata" è trasparente al programmatore.
+    
+    Al fine del testing del codice si è utilizzato il tool valgrind, per analizzare
+    con maggiore cognizione di causa cosa accade allo heap durante il runtime.
+        valgrind -s ./a.out (per visualizzare in modo esteso gli errori del programma)
+        valgrind --track-origins=yes ./a.out (per maggiori dettagli)
+    
+    Il programma, partendo dagli argomenti passati al main (max, min e size di default),
+    comincia una serie di allocazioni e riallocazioni, al fine di testare il funzionamento
+    dello heap con operazioni che, volutamente, vanno ad operare in maniera non sicura
+    sulle zone dello stesso; accedendo a zone che non le competerebbero.
+    Inizialmente si opera su p, poi anche su q.
+    Successivamente, prima di continuare a lavorare su p, esso viene salvato in oldp.
+    Il programma continua a "giocare" con l'heap, incrementando e decrementando la size
+    e stampando man mano i contenuti dell'array tramite la funzione costante definita
+    al precompilatore a inizio programma.
+    Infine effettua le due free su p e q (effettivamente valgrind non riporta memory leaks).
+    
+    Note rilevanti:
+    1) se si decommenta free, in realtà, non accade nulla di particolare perchè:
+        - se realloc non ha cambiato zona di memoria -> ho già deallocato
+        - se realloc HA cambiato zona di memoria -> ha lei deallocato
+        Valgrind, effettivamente, riporta 6 allocazioni e 7 free (una free "a vuoto")
+    2) valgrind conta +1 malloc (6 invece che 5) perchè viene contata la allocazione del buffer
+        per printf!
+    3) Modificatori nella funzione print:
+        ‘hh’:
+        Specifies that the argument is a signed char or unsigned char, as appropriate.
+         A char argument is converted to an int or unsigned int by the default argument
+         promotions anyway, but the ‘hh’ modifier says to convert it back to a char again.
+        This modifier was introduced in ISO C99.
+        'u': unsigned
+        '3' ___...(3 spazi)
+    4) Si è testato, cambiando i valori di sz (aumentandola di un valore condsiderevole),
+        che oldp può puntare a una zona diversa da quella di p dopo la realloc con la sz
+        maggiore (variando il print).

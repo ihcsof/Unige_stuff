@@ -1,0 +1,12 @@
+tar -x -f hello0.tgz (x: extract f: usa come archivio)
+
+make test_master 
+
+make string_master
+./string_master 
+
+make check_hello1
+
+make ken_check
+
+make tgz

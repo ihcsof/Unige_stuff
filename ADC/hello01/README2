@@ -1,0 +1,37 @@
+The Lord of the StRings: Episode 2
+
+Ricordiamo che gli scopi di questo primo laboratorio sono:
+- imparare a usare le funzioni di <stdio.h> printf() ecc. in C
+- capire cosa sono le stringhe, gli array di caratteri e i puntatori in C
+- cominciare a vedere la bash, sia in modalita` interattiva, sia in modalita`
+  script
+- cominciare a usare le applicazioni make, diff, gcc, rm e (sopratutto) man
+- imparare a non spaventarsi troppo davanti ad una richiesta di completamento
+  di un codice gia` parzialmente scritto ... ;-)
+
+Questa volta si richiede di completare il file "hello1.c".  Si tratta di
+una variante di "hello0.c" gia` visto la settimana scorsa che forza il
+primo carattere diverso da uno spazio della stringa ad essere maiuscolo,
+se si tratta di una lettera alfabetica.
+
+Il file "hello1.c" deve essere completato in modo che:
+a) generi lo stesso identico output di "hello0.c", senza modificare
+   nulla se non gli spazi vuoti tra i due commenti
+   /*** TO BE DONE START ***/          /*** TO BE DONE END ***/
+b) il numero di istruzioni e di caratteri tra la fine del primo e
+   l'inizio del secondo commento sia minimo, e SENZA ANDARE A CAPO
+c) la funzione "my_printf" possa essere richiamata anche su altre
+   stringhe oltre a quelle contenute attualmente nella funzione "main".
+
+La verifica dell'uguaglianza dell'output puo` essere fatta in modo
+automatico lanciando il comando:
+> make check_hello1
+
+Provate anche a capire come funziona il test automatico, andando a
+leggere sia il Makefile sia lo script check1.bash
+Su questo programma si applica un eventuale bonus +1 sul voto finale,
+a condizione di riuscire a inserire al massimo 99 caratteri (compresi
+i due commenti che non devono essere modificati) nella riga da
+completare. In ogni caso la riga da completare non deve superare la
+lunghezza di 110 caratteri.
+
