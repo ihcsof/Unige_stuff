@@ -1,0 +1,1 @@
+print length [10;100;20]==3 // prints true

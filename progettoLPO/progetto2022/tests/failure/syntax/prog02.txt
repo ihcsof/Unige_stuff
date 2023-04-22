@@ -1,0 +1,1 @@
+print [1;2][1][1] // Syntax error: on line 1: Expecting EOF, found OPEN_ARRAY('[')

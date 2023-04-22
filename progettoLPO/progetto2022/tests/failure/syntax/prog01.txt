@@ -1,0 +1,1 @@
+print [] // Syntax error: on line 1: Unexpected token CLOSE_ARRAY(']')

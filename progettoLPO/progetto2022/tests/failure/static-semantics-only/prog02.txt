@@ -1,0 +1,2 @@
+print [1;true] // without -ntc: Static error: Found BOOL, expected INT
+               // with -ntc: prints  [1;true]

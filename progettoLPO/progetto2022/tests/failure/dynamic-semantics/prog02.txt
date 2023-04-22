@@ -1,0 +1,1 @@
+print [1;2;3][3] // Dynamic error: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3

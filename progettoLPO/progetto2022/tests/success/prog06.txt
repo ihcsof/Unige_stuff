@@ -1,0 +1,2 @@
+var a=[10;100;20];
+print a[0]+a[2]==30 // prints true

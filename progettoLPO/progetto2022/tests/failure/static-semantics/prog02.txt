@@ -1,0 +1,1 @@
+print length (1,2) // Static error: Found (INT*INT), expected ARRAY

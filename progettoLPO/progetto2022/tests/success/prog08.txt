@@ -1,0 +1,7 @@
+var a=[1;2;3];
+var i=0;
+var len=length a;
+while(!(i==len)){
+    print a[i]==i+1; // prints true three times
+    i=i+1
+}
