@@ -1,0 +1,24 @@
+Torino Asti 36
+Asti Alessandria 35
+Torino Fossano 49
+Fossano Ceva 32
+Ceva Savona 45
+Albenga Finale 18
+Savona Finale 19
+Varazze Savona 17
+Genova Varazze 27
+Casale Vercelli 37
+Casale Alessandria 32
+Alessandria Masone 45
+Masone Genova 14
+Genova Serravalle 50
+Serravalle Tortona 18
+Tortona Alessandria 21
+Genova Chiavari 38
+Chiavari Spezia 56
+Tortona Voghera 20
+Piacenza Voghera 57
+Piacenza Milano 58
+Tortona Pavia 45
+Pavia Milano 21
+0
