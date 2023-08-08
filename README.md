@@ -4,7 +4,7 @@ Fuori dalla cartella APPUNTi ci sono alcuni codici.
 NB1: non mi ritengo responsabile per copiature di codice.
 Ho condiviso il materiale nello spirito dell'Open Source e della sana ispirazione per migliorarsi
 
-NB2: Gran parte del codice è sviluppato in gruppo, e non da me singolarmente
+NB2: Gran parte del codice dei progetti, ad esclusione del daltonizationProject, è sviluppato con https://github.com/KubriksCode/, e non da me singolarmente.
 
 Il videogioco del mio libro è scaricabile gratuitamente qui: https://play.google.com/store/apps/details?id=com.Uot_Company.LatharGame&pli=1
 
