@@ -1,0 +1,32 @@
+What is the definition of modeling in a general sense? * A visual representation of something for something * A mathematical representation of something for something * both * 3
+In modeling, what is the purpose of creating a representation of a concept, system, or structure? * To create a blueprint for construction * To facilitate understanding and analysis * To generate automatic artifacts * 2
+What is the significance of modeling "to-be" in software development? * It provides a visual representation of the current state * It allows analysis before building anything * It focuses on documentation and understanding * 2
+What can be automatically generated from models in software development? * Code * Concepts * Blueprints * 1
+What distinguishes a notation from a language in the context of modeling? * Precision level * Structured or natural language * Supporting software tools * 1
+How do modeling notations differ in terms of standardization? * All modeling notations are standardized * Some modeling notations are * Modeling notations are not standardized * 2
+What does UML stand for in the context of software modeling? * Unified Modelling Language * Universal Modeling Logic * Uniform Model Language * 1
+Which of the following is a key feature of UML? * Visual sub-notations only * Textual sub-notations only * Integrated notations * 3
+What is the primary advantage of UML being adaptable to specific contexts? * It reduces the number of diagrams needed * It allows for more precise modeling * It ensures general-purpose usage * 2
+How many different types of UML diagrams are commonly used in software development? * 4 * 14 * 49 * 2
+What is one challenge associated with UML's complexity? * Lack of supporting tools * Lack of integrated notations * Unclear semantics * 3
+Which UML version significantly improved semantics? * Version 1.0 * Version 2.0 * Version 2.5.1 * 3
+What characteristic must a requirement possess to be considered fundamental? * Complete * Verifiable * Unambiguous * 2
+Which type of requirements describe the functions that software is expected to perform? * Functional requirements * Usability requirements * Regulatory requirements * 1
+What does ISO 9241-11 define as usability? * The ease of access * The extent to which specified users can achieve goals effectively, efficiently, and with satisfaction * The software's responsiveness * 2
+In the context of non-functional requirements, what is the significance of verifiability? * It ensures the requirements are user-friendly * It allows for easy testing and measurement * It enhances system security * 2
+What's a main category of non-functional requirements? * Product * Behavioral * Operational * 1
+What's a main category of non-functional requirements? * Efficiency * Regulatory * External * 3
+What's a main category of non-functional requirements? * Dependability * Enviromental * Organizational * 3
+How can the usability of a software product be effectively assessed? * By measuring the number of lines of code * Through A/B testing with future users * By evaluating the complexity of the software * 2
+Which dimension of dependability relates to the system's ability to adapt to new requirements? * Maintainability * Reliability * Safety * 1
+What are the requirements that are related to the context in which a system will be placed called? * Environmental requirements * Contextual requirements * Physical requirements * 1
+What do operational requirements typically specify? * The schedule for software development * Hardware specifications * Constraints on how the software will be used * 3
+When it comes to unethical or illegal requirements, what action can an analyst/designer take? * Refusing to support them * Complying without question * Ignoring them and proceeding with development * 1
+In the context of requirements priority, what does the MoSCoW method help determine? * Requirement relevance * System security * System performance * 1
+What is the primary role of a requirement specification document? * Providing a basis for estimating product costs * Describing the software development process * Defining software architecture * 1
+Requirements should be: * Complete and Correct * Complete and Consistent * Coherent and Consistent * 2
+Non functional req are also termed as: * constraints * capabilities * features * 1
+Performance requirements put constraints on: * latency * throughput * both * 3
+Why Space requirements (old fashioned) are back? * Moore Law * IoT and Pay per use * High performance Computing * 2
+Which dependability req. is missing in: Maintainab, Avaib, Reliab, Safety, Err Tol? * Security * Repairability * Redundancy * 2
+Which isn't an Operational req? * uneven distribution of user accesses * conflicting roles for single user * user groups conflicting * 3  
