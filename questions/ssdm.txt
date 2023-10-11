@@ -30,3 +30,14 @@ Performance requirements put constraints on: * latency * throughput * both * 3
 Why Space requirements (old fashioned) are back? * Moore Law * IoT and Pay per use * High performance Computing * 2
 Which dependability req. is missing in: Maintainab, Avaib, Reliab, Safety, Err Tol? * Security * Repairability * Redundancy * 2
 Which isn't an Operational req? * uneven distribution of user accesses * conflicting roles for single user * user groups conflicting * 3  
+In the context of design, what is the primary role of abstract design? * Roof construction * Bridging the gap from problems to solutions * Executable models * 2
+When discussing design as a noun, what does it refer to? * Development processes * Architectural components * The result of the design process * 3
+Why is early-stage design important in software development? * To estimate costs and resources * To focus on individual components * To avoid communication with stakeholders * 1
+What makes errors in software development more expensive to fix? * The use of reusable concepts * The involvement of stakeholders * The advancement of development stages * 3
+In the context of design, what does "divide et impera problem" refer to? * A specific design methodology * Neglecting the contribution of subsystems to the overall system * A pattern for component reuse * 2
+When should the design process take place? * Only in the early stages of development * At any point in the development process * After implementation * 2
+What is the primary input for the design process? * Stakeholder communication * Domain-specific terms * Requirements * 3
+What is the primary output of the design process? * Detailed software code * A model of the system or solution * Project management plans * 2
+Why is memory and communication considered essential in software development? * To enhance creativity within the team * To support the aloof geniuses * To facilitate team collaboration and knowledge transfer * 3
+What purpose do design methods serve in software development? * To promote blank canvas panic * To avoid predictable development * To provide structure and guidance in the design process * 3
+What role do well-established pieces of solutions, such as patterns and tactics, play in software design? * They are used to create novel, unique designs * They contribute to blank canvas panic * They aid designers in making choices and improving proficiency * 3
