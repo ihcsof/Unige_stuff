@@ -41,3 +41,13 @@ What is the primary output of the design process? * Detailed software code * A m
 Why is memory and communication considered essential in software development? * To enhance creativity within the team * To support the aloof geniuses * To facilitate team collaboration and knowledge transfer * 3
 What purpose do design methods serve in software development? * To promote blank canvas panic * To avoid predictable development * To provide structure and guidance in the design process * 3
 What role do well-established pieces of solutions, such as patterns and tactics, play in software design? * They are used to create novel, unique designs * They contribute to blank canvas panic * They aid designers in making choices and improving proficiency * 3
+You're doing great! * right * wrong * wrong * 1
+Is all design an architecture? * Yes * No, there's no set inclusion * No, but all architecture is design * 3
+Which is the stopping rule for architectural design? * when project manager decides * when customers decide * there's no specific criterion * 3
+The definition fundamental <concepts of properties of a sys in its env; embodied in its elements, relationships, and in the principles of its design and evolution> is: * system * architecture * could be both * 2
+Stakeholder's interests are also in general called: * concerns * purpose * mission * 1
+The relation between System and Architecture in the first seen diagram is: * 1..n to 1..n * 0..n to 0..n * 0..n to 1..n * 2
+The relation between System and Architecture in the second seen diagram is: * 1..1 to 1..1 * 0..1 to 0..1 * 1..n to 1..n * 1
+A set of conventions for constructing, interpreting, using and analyzing one type of Architecture View is a: * Architecture Model * Architecture Viewpoint * Model Kind * 2
+The perspective of one or more stakeholders on how the architecture address specific concerns is a: * Architecture View * Architecture Viewpoint * Model Kind * 1
+Which is the correct order? * Arch. drivers, documentation, design, eval * design, drivers, documentation, eval * drivers, design, documentation, eval * 3

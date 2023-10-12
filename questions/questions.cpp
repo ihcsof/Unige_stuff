@@ -127,7 +127,7 @@ int main(int argc, char* argv[]) {
         else
             outputFileName = aux;
 
-        ofstream outputFile("err/"+outputFileName, ios::app);
+        ofstream outputFile(outputFileName, ios::app);
 
         if (outputFile.is_open()) {
             for (const Question& incorrectQuestion : incorrectQuestions)
