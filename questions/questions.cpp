@@ -46,6 +46,13 @@ vector<Question> readQuestionsFromFile(const string& fileName) {
     return questions;
 }
 
+void saveIncorrects(const Question& question, ofstream& outputFile) {
+    outputFile << question.text << '*';
+    for (const string& answer : question.answers)
+        outputFile << answer << '*';
+    outputFile << question.correctAnswer << endl;
+}
+
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         cout << "Usage: " << argv[0] << " <filename>" << endl;
@@ -64,6 +71,7 @@ int main(int argc, char* argv[]) {
 
     int correctAnswers = 0;
     int answeredQuestions = 0;
+    vector<Question> incorrectQuestions;
 
     while (!questions.empty()) {
         random_device rd;
@@ -89,8 +97,10 @@ int main(int argc, char* argv[]) {
             if (userAnswer == currentQuestion.correctAnswer) {
                 cout << "\nCorrect answer!\n" << endl;
                 correctAnswers++;
-            } else
+            } else {
                 cout << "\nWrong answer. The correct one is: " << currentQuestion.correctAnswer << ".\n\n";
+                 incorrectQuestions.push_back(currentQuestion);
+            }
         else
             cout << "Input not valid. Please insert 1, 2, or 3." << endl;
 
@@ -100,7 +110,34 @@ int main(int argc, char* argv[]) {
 
     // All questions answered or put 0
     double percentageCorrect = static_cast<double>(correctAnswers) / (answeredQuestions ? answeredQuestions : 1) * 100;
-    cout << "You answered " << percentageCorrect << "% of the questions correctly." << endl;
+    cout << "---You answered " << percentageCorrect << "% of the questions correctly." << endl;
+
+    string saveFile;
+    cout << "\nDo you want to save incorrect questions to a file? (y/n): ";
+    cin >> saveFile;
+
+    if (saveFile == "y" || saveFile == "Y") {
+        string outputFileName = "incorrect_questions.txt"; // default fname
+        string aux;
+        std::cout << "\nEnter a file name: ";
+        std::cin >> aux;
+    
+        if (aux.length() < 4 || aux.substr(aux.length() - 4) != ".txt")
+            std::cout << "File provided wasn't a txt file: appending to incorrect_questions.txt" << std::endl;
+        else
+            outputFileName = aux;
+
+        ofstream outputFile("err/"+outputFileName, ios::app);
+
+        if (outputFile.is_open()) {
+            for (const Question& incorrectQuestion : incorrectQuestions)
+                saveIncorrects(incorrectQuestion, outputFile);
+
+            outputFile.close();
+            cout << "Incorrect questions saved to " << outputFileName << endl;
+        } else
+            cout << "Unable to open the output file." << endl;
+    }
 
     return 0;
 }
