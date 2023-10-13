@@ -1,0 +1,75 @@
+According to the text, what defines a distributed system? * A single multi-core computer * A network with infinite bandwidth * A collection of autonomous computing elements * 3
+Which of the following isn't one of the 8 fallacies of distributed computing mentioned in the text? * network is reliable * network is fast * Transport cost is zero * 2
+Why might someone need a distributed system, according to the text? * To have a single administrator * To reduce performance * To ensure availability * 3
+What is necessary for nodes in a distributed system to be coherent? * A global clock * Node failures * Synchronization * 3
+According to the text, why might someone choose to implement a distributed system for their application? * To have complete control as a single entity * To reduce costs * To ensure availability even if some components fail * 3
+What challenges does the text mention regarding making disparate machines in a distributed system coherent? * Managing group membership and authorizations * Synchronizing global clocks * Centralizing control * 1
+What is a transaction in the context of this text? * A change in system configuration * A simultaneous modification of multiple systems * An independent modification in a system that stores data * 3
+What are the ACID properties related to transactions? * Availabilty, Isolation, Durability, Consistency * Atomicity, Consistency, Isolation, Durability * Atomicity, Consistency, Integrity, Durability * 2
+When discussing the ACID property of Atomicity, what does it mean when a transaction is treated as a single unit? * It can be interrupted and resumed later * It succeeds or fails as a whole * It can be divided into smaller units * 2
+Which property ensures that even if transactions run concurrently, the system behaves as if they've been running sequentially? * Atomicity * Durability * Consistency * 3
+According to the CAP theorem, which of the following combinations of properties cannot coexist in a distributed system? * Consistency, Availability, and Partition Tolerance * Consistency, Atomicity, and Durability * Atomicity, Availability, and Isolation * 1
+What is the consequence of a network partition in a distributed system, as mentioned in the text? * Partially offline system until the partition is resolved * Inconsistent and stale data * you have a trade off * 3
+In the context of distributed systems, what trade-off is mentioned in the text? * Consistency vs. availability * Availability vs. durability * Partition tolerance vs. data consistency * 3
+Which of the following systems is mentioned as an example of a non-ACID system? * GIT (conflicts) * DNS * both * 3
+When were the ACID properties implemented, even though the acronym was coined later? * In 1983 * In 1973 * In 1999 * 2
+What are the three components of the CAP theorem, and what does each represent? * A - Atomicity, C - Consistency, P - Partition Tolerance * C - Consistency, A - Availability, P - Partition Tolerance * C - Correctness, A - Atomicity, P - Persistence * 2
+What does it mean when a system is said to have "partition tolerance" according to the CAP theorem? * The system remains consistent * The system keeps working even if network messages are dropped * Every request receives a non-error response * 2
+How does the CAP theorem illustrate the trade-offs in distributed systems? * It shows that you can have all properties simultaneously * It shows that achieving one property may come at the expense of the others * It doesn't address trade-offs in distributed systems * 2
+What is an example of a system mentioned in the text that can work with inconsistent functionality? * GIT (conflicts) * Relational databases * Email servers * 1
+How does the text describe the behavior of a system when it faces a network partition? * The system guarantees data consistency * The system returns an error * The system loses partition tolerance * 3
+In the context of distributed systems, what is the primary purpose of the ACID properties? * To ensure the system remains available at all times * To provide a framework for handling network partitions * To implement transactional consistency and durability * 3
+When scaling vertically, what happens when a start-up needs a bigger server? * The cost remains manageable * The server capacity increases proportionally * The cost becomes unmanageable * 3
+What is the primary challenge when scaling horizontally in distributed computing? * Coordination and scalability * Increased hardware costs * Lack of redundancy * 1
+How does the distributed system ensure scalability in the context of read-intensive workloads? * By replicating all data on each server * By running all write commands on a single server * By executing write commands on all machines and read commands locally * 3
+What is the primary challenge when implementing a shared log in a distributed system with a fail-stop failure model? * Delayed communication * Arbitrary message loss * Malicious behavior * 2
+In the fail-stop failure model, what is the primary assumption about failed nodes? * They will eventually resume * They lose all their data * They will never resume * 1
+What is the primary reason for using a majority-based approach in consensus algorithms? * To minimize the number of servers required * To guarantee that decisions are taken * To ensure there are no conflicting interests * 2
+What is the primary focus of Paxos in the context of distributed systems? * Leader election * Cluster management * Achieving consensus * 3
+In the context of consensus algorithms, why did Leslie Lamport create Paxos? * To show that Nancy Lynch and Barbara Liskov made mistakes in their system * To prove that achieving consensus in distributed systems is impossible * To demonstrate the correctness of Lynch and Liskov's system * 2
+What is the primary challenge in implementing the Paxos algorithm correctly? * Ensuring there are no conflicting interests among participants * Achieving a fast consensus * Understanding and handling the details of the algorithm * 3
+In the basic Paxos algorithm, how is a decision reached? * Through a majority vote * Through a centralized coordinator * Through a random selection * 1
+What is the primary purpose of leader election in distributed systems? * To ensure all servers have the same data * To minimize the number of servers required * To determine which server can propose values in consensus algorithms * 3
+In the fail-stop failure model, what happens if a proposer fails during the "accept" phase? * The decision is immediately finalized * Another proposer eventually takes over and finishes the job * The consensus process starts over from the beginning * 2
+What is the primary benefit of the Multi-Paxos approach compared to the basic Paxos algorithm? * It reduces the number of servers required * It ensures faster consensus * It builds a full log of decisions * 3
+What does each machine's state represent in the context of Deterministic State Machines? * The machine's location * The machine's configuration * The machine's communication protocol * 2
+How is it determined whether two machines are in the same state in Deterministic State Machines? * If they have identical memory * If they receive the same input in the same order * If they have the same initial state * 2
+In the context of read-intensive workloads, what is the primary advantage of a distributed system based on deterministic state machines? * Improved scalability due to distributed processing * Reduced hardware requirements * Higher consistency through centralized control * 1
+What is the primary reason for having a majority-based approach in consensus algorithms like Paxos? * To minimize hardware costs * To ensure that decisions are taken only when there is unanimous agreement * To prevent malicious behavior * 2
+What is the significance of having a majority of nodes agree on a decision in the Paxos algorithm? * It ensures there are no conflicting interests among participants * It guarantees that the decision is correct * It allows for fast consensus * 2
+In a fail-stop scenario, what is the primary characteristic of messages exchanged in Paxos? * They may take arbitrary time * They are guaranteed to be delivered instantly * They are encrypted for security * 1
+If you have CP you have: * error * hangs forever * old or random data * 1
+If you have AP you have: * error * hangs forever * old or random data * 3
+If you have CA you have: * error * hangs forever * old or random data * 2
+Who is the creator of this circus? * kanye west * lorenzofoschi * filippo ricca * 2
+You're doing great :O * right * wrong * wrong * 1
+How many round trips has Basic Paxos? * 1 * 2 * 3 * 2
+How many round trips has Multi Paxos? * 1 * 2 * 3 * 1
+What happens when an Acceptor fails after accepting? * protocol fails completely * proposer didn't received accepts, so he proposes again * proposer received two accepts: majority is ok! * 3
+What happens when an Acceptor fails before accepting? * We're 2 out of 3 (proposer + other acceptor): majority is ok! * We're 2 out of 3 (two proposers): majority is ok! * proposer has to repeat proposal again * 1
+What happens when an Propser fails in prepare phase (case seen in lesson)? * protocol fails * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * 2
+What happens when an Propser fails in accept phase (case seen in lesson)? * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * Specifically Node2 propose B but Node3 lets him know that A has already been proposed * 3
+What happens when you can't accept something in Paxos? * You go with the smallest previous round number * You go with the highest previous round number * You go with the highest round number between the previous one and what you have received * 2
+In Raft, what happens in split vote? * Timeout will take care of removing the stale * A random candidate is chosen as leader * Vote is denied and protocol fails * 1
+What happens in Paxos if Node3, after having accepted proposal by Node1 that now is down, receives a proposal from Node2 with something different? * the protocol fails * it promises because the round number is higher than the previous proposal, but it also adds the info of the previous one * it doesn't promise because it already had a previous promise * 2
+What is log replication in Raft? * The act of sending hearthbeats * The act of sending log infos with hearthbeats * Building a full log * 2
+What happpens if a network partition happens in Raft? * The partition without leader stops to wait the one with the leader * The protocol fails * The partition without leader starts a new vote * 3
+What happens when the network partition is solved in Raft? * The leader of the portion that went on with higher numbers will be the new leader * The original leader is restored * A new leader election starts * 1
+After network partition, what hapens if the two partitions went both on and have the same number? * Choose depending of who is the previous leader * Another leader election * Choose based on the log with most entries * 3
+Which one isn't part of a fail-stop scenario? * computers can take for arbitrary time * one-to-n msgs possibile * msgs can be lost * 2
+What is a leader-initiated log-storing log compaction? * A snapshot taken by the leader and stored externally * A snapshot taken by the application and stored externally * A list of checkpoint stored directly on the log * 3 
+What is leader-initiated externally-storing log compaction? * A snapshot taken by the leader and stored externally * A list of checkpoint stored directly on the log *A snapshot taken by the application and stored externally * 1
+What is indipendente-initiated externally storing log compation? * A snapshot taken by the leader and stored externally * A snapshot taken by the application and stored externally *  A list of checkpoint stored directly on the log * 2
+Which are the building blocks of Zoekeeper? * Wait-Free, Ordering, Locks * Wait-Free, Ordering, Change Events * Blocking, Ordering, Change Events * 2
+Zoekeeper's ordering means: * writes are linearizable and reads have ACID's isolation * writes are linearizable and reads are serializable * both means the same * 3
+Zoekeeper's ordering is with * LIFO * FIFO * both of them * 2
+Zoekeeper's Change Event implies that * changes gets notified before the result can be accessed * the opposite * depends * 1
+Zoekeeper works like * filesystem for small pieces of data + notify - partial r/w * single point of failure * filesystem for big data + notify - partial r/w * 1
+Faster network aka nearer nodes means more failures? * Yes, it's a trade off between space and latency * Yes, it's a trade off between reliability and latency * No * 2
+Will Zookeeper become faster or slower by adding new nodes to the cluster? * Slower * Faster for reads, slower for writes * Faster for writes slower for reads * 2
+Which consensus Zookeeper uses? * Raft * Similar to Raft, hidden internally* Paxos * 2
+Which of these isn't something to take into account for choosing the number of znodes? Performance (of r/w), Costs, Tolerable failures (avaibility) * performance * avaibility * none * 3
+Ephimeral node means: * if the creator of this node (host) fails, znodes is deleted * all the children of it are deleted * after some time are deleted * 1
+What you have to check if u want to put an x-lock? * Whatever is doing the node before you * The X-lock before you * The S-lock before you * 1
+What you have to check if u want to put an s-lock? * Whatever is doing the node before you * The X-lock before you * The S-lock before you * 2
+In Zookeeper, how is a write performed? * directly write to leader * write to a node, node will ask leader to add the write and give ack only when the leader say that the write propagation is done * write to a node, node will propagate to everyone and then ack * 2
