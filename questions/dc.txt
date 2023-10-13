@@ -73,3 +73,15 @@ Ephimeral node means: * if the creator of this node (host) fails, znodes is dele
 What you have to check if u want to put an x-lock? * Whatever is doing the node before you * The X-lock before you * The S-lock before you * 1
 What you have to check if u want to put an s-lock? * Whatever is doing the node before you * The X-lock before you * The S-lock before you * 2
 In Zookeeper, how is a write performed? * directly write to leader * write to a node, node will ask leader to add the write and give ack only when the leader say that the write propagation is done * write to a node, node will propagate to everyone and then ack * 2
+What is the key inspiration behind the design of Apache Zookeeper? * The implementation of the NFS filesystem * The need for order and sequencing in data processing * The coordination of distributed applications * 3
+Which data structure does Apache Zookeeper primarily utilize for organization? * Trees * Graphs * Hashmaps * 1
+How is the leader elected in Apache Zookeeper? * By proposing oneself as a candidate * By consensus of a majority of servers * By monitoring changes in the system * 1
+What does the 'Sequence' flag ensure in the Apache Zookeeper data model? * Append a counter to data * Monitor leader changes * Maintain consistency across servers * 1
+How is the update committed in Apache Zookeeper? * When all servers have saved the change * When a majority of servers have saved the change * When the leader has approved the change * 2
+What was Google's desired approach to transaction processing? * External consistency * Internal consistency * Sequential consistency * 1
+What is the main problem with the exclusive lock approach in a large system? * It allows only one read operation at a time * It prevents any other operations while writing * It slows down the system significantly * 2
+What is the key feature required for tracking historical data in the system? * Low latency clocks * Super-precise clocks * Atomic clocks * 2
+What does the TrueTime.now() function return in the Google Spanner system? * A single timestamp value * An interval between earliest and latest times * The average time across all datacenters * 2
+What information is extracted after repeated measurement in the Spanner system? * Statistical averages * Time offset and round-trip delay * Error intervals * 2
+What is the purpose of the algorithm used to weed out inaccurate time masters in the Spanner system? * To identify the most consistent time interval * To calculate the average time across all intervals * To prevent delays in the system * 1
+What was the primary issue with utilizing Paxos for every update in Google's distributed datacenters? * High network latency * Overloading of servers * Inefficiency in processing updates * 1
