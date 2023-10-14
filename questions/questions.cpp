@@ -46,6 +46,25 @@ vector<Question> readQuestionsFromFile(const string& fileName) {
     return questions;
 }
 
+int getValidAnswer() {
+    int userAnswer;
+    while (true) {
+        cout << "Insert your answer (1, 2, or 3, 0 to leave): ";
+        if (cin >> userAnswer) {
+            if (userAnswer >= 0 && userAnswer <= 3)
+                break;
+            else
+                cout << "Input not valid. Please insert 0, 1, 2, or 3." << endl;
+        } else {
+            cout << "Invalid input. Please enter a valid integer." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
+    return userAnswer;
+}
+
 void saveIncorrects(const Question& question, ofstream& outputFile) {
     outputFile << question.text << '*';
     for (const string& answer : question.answers)
@@ -85,24 +104,19 @@ int main(int argc, char* argv[]) {
         cout << "2. " << currentQuestion.answers[1] << endl;
         cout << "3. " << currentQuestion.answers[2] << endl;
 
-        int userAnswer;
-        cout << "Insert your answer (1, 2, or 3, 0 to leave): ";
-        cin >> userAnswer;
+        int userAnswer = getValidAnswer();
 
         if (userAnswer == 0) break;
 
         answeredQuestions++;
-
-        if (userAnswer >= 1 && userAnswer <= 3)
-            if (userAnswer == currentQuestion.correctAnswer) {
-                cout << "\nCorrect answer!\n" << endl;
-                correctAnswers++;
-            } else {
-                cout << "\nWrong answer. The correct one is: " << currentQuestion.correctAnswer << ".\n\n";
-                 incorrectQuestions.push_back(currentQuestion);
-            }
-        else
-            cout << "Input not valid. Please insert 1, 2, or 3." << endl;
+   
+        if (userAnswer == currentQuestion.correctAnswer) {
+            cout << "\nCorrect answer!\n" << endl;
+            correctAnswers++;
+        } else {
+            cout << "\nWrong answer. The correct one is: " << currentQuestion.correctAnswer << ".\n\n";
+            incorrectQuestions.push_back(currentQuestion);
+        }
 
         // A question can appear only once.
         questions.pop_back();

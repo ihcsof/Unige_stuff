@@ -7,7 +7,7 @@ What challenges does the text mention regarding making disparate machines in a d
 What is a transaction in the context of this text? * A change in system configuration * A simultaneous modification of multiple systems * An independent modification in a system that stores data * 3
 What are the ACID properties related to transactions? * Availabilty, Isolation, Durability, Consistency * Atomicity, Consistency, Isolation, Durability * Atomicity, Consistency, Integrity, Durability * 2
 When discussing the ACID property of Atomicity, what does it mean when a transaction is treated as a single unit? * It can be interrupted and resumed later * It succeeds or fails as a whole * It can be divided into smaller units * 2
-Which property ensures that even if transactions run concurrently, the system behaves as if they've been running sequentially? * Atomicity * Durability * Consistency * 3
+Which property ensures that even if transactions run concurrently, the system behaves as if they've been running sequentially? * Atomicity * Durability * Isolation * 3
 According to the CAP theorem, which of the following combinations of properties cannot coexist in a distributed system? * Consistency, Availability, and Partition Tolerance * Consistency, Atomicity, and Durability * Atomicity, Availability, and Isolation * 1
 What is the consequence of a network partition in a distributed system, as mentioned in the text? * Partially offline system until the partition is resolved * Inconsistent and stale data * you have a trade off * 3
 In the context of distributed systems, what trade-off is mentioned in the text? * Consistency vs. availability * Availability vs. durability * Partition tolerance vs. data consistency * 3
