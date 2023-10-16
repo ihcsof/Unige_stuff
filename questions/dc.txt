@@ -85,3 +85,4 @@ What does the TrueTime.now() function return in the Google Spanner system? * A s
 What information is extracted after repeated measurement in the Spanner system? * Statistical averages * Time offset and round-trip delay * Error intervals * 2
 What is the purpose of the algorithm used to weed out inaccurate time masters in the Spanner system? * To identify the most consistent time interval * To calculate the average time across all intervals * To prevent delays in the system * 1
 What was the primary issue with utilizing Paxos for every update in Google's distributed datacenters? * High network latency * Overloading of servers * Inefficiency in processing updates * 1
+After the clock is synchronized, the uncertainty grows according to: * best-case assumptions on computers’ clock drift * worst-case ones * exponential growth * 2
