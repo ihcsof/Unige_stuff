@@ -86,3 +86,25 @@ What information is extracted after repeated measurement in the Spanner system? 
 What is the purpose of the algorithm used to weed out inaccurate time masters in the Spanner system? * To identify the most consistent time interval * To calculate the average time across all intervals * To prevent delays in the system * 1
 What was the primary issue with utilizing Paxos for every update in Google's distributed datacenters? * High network latency * Overloading of servers * Inefficiency in processing updates * 1
 After the clock is synchronized, the uncertainty grows according to: * best-case assumptions on computers’ clock drift * worst-case ones * exponential growth * 2
+How is the clock drift handled? * Doesn't matter because freq(clock drift) << freq(cpu fails) * Using atomic clocks * re-sync every 30 seconds. The first one is when clocks broke down * 3
+In the TrueTime example, what happens during a network congestion? * spikes in red part * 99.9 percentile threshold decreases * 99.9 percentile threshold increases * 3
+What is the key feature of the data model used in GoogleCS? * Hierarchical storage * Key-value store * Relational database * 2
+How are conflicting transactions handled in GoogleCS? * They are executed in parallel * They are assigned timestamps based on their completion * They are given disjoint locking intervals * 3
+What is the purpose of using TrueTime in GoogleCS for assigning timestamps? * To prevent transaction errors * To ensure faster processing of transactions * To handle uncertainty in the clock * 3
+How are non-conflicting transactions timestamped in GoogleCS? * Based on their completion time * Based on their start time * Based on their order of execution * 2
+What is the role of Paxos in GoogleCS's operation? * Assigning timestamps to transactions * Handling intercontinental consensus * Managing data conflicts * 2
+What determines the timestamp used for assigning writes in GoogleCS? * The moment of transaction completion * The moment of lock acquisition * The moment of transaction initiation * 2
+How does GoogleCS handle large clock uncertainty in relation to transaction length? * It slows down transaction processing * It increases the system's processing speed * It extends the transaction length * 1
+What does λ represent in the context of the M/M/1 queue model? * Arrival rate of jobs * Service rate of the server * Time spent in the queue * 1
+What is the condition for the queue to be in equilibrium in the M/M/1 model? * λ > μ * λ < μ * λ = μ * 2
+What does Little's Law in the M/M/1 model define? * The average time spent in the queue * The average queue length * The probability distribution of jobs * 1
+What is the average time spent in the system for an M/M/1 FIFO queue according to the provided text? * λ * (1 - λ) * 1/(1 - λ) * 3
+What is the key property of the M/M/1 queue model as described in the text? * Jobs arrive and are served in a memoryless fashion * Jobs are served based on their priority * Jobs are served sequentially * 1
+According to the M/M/1 model, what is the probability distribution for having x jobs in the queue? * λ^x * (1 - λ)^x * λ/(1 - λ) * 2
+How is the equilibrium probability distribution of the M/M/1 queue model calculated for the system described? * Using exponential functions * Using differential equations * Using probability equations * 3
+According to Little's Law, what does L represent in the context of the M/M/1 model? * Average time spent in the system * Average queue length * Arrival rate of jobs * 2
+What principle does the M/M/1 queue model illustrate with respect to real-world systems, as mentioned in the text? * Memoryless property of jobs * Closed-form formulas for analysis * Insight into long-run behavior * 3
+What is the average time spent in the system for an M/M/1 FIFO queue when the arrival rate (λ) is 0.5? * 1 * 2 * 0.5 * 2
+Leave when (wait till) TT.now().earliest > ? * TT.now().latest chosen at lock acquisition * ts * they're equal * 3
+Avg length of the queue is? * 1/(1-lam) * lam/(1-lam) * (1-lam)^x * 2
+If lam = 0.9 i have * 9 jobs before me * w = 10 * both are related * 3
