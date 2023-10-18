@@ -57,5 +57,14 @@ What is better according to Gang of Four? * interfaces with object composition *
 The observer design pattern is * behavioural * structural * creational * 1
 The intent of defining a 1-N dependency between objects to notify the dependents when one object change state is called * state pattern * observer * factory * 2
 In Observer Pattern, who has the attach/detach method * The Observer, together with update * The Subject, together with notify * The Subject, together with update * 2
-Where does the notify method in Observer Pattern * It loops the attached observers and calls their getState * It loops the attached observers and calls their notify * It loops the attached observers and calls their update * 3
+What does the notify method in Observer Pattern * It loops the attached observers and calls their getState * It loops the attached observers and calls their notify * It loops the attached observers and calls their update * 3
 Where is useful, in Observer Pattern, to put a lifespan? * attach * detach * update * 1
+What did the Architectural Design section mention about the decision-making process in design? * Every decision has a right or wrong outcome * There is only one best solution for every problem * Solutions may result in different issues elsewhere in the system * 3
+What are the main components of design patterns in software development? * Dependencies and interactions * Names and specifications * Abstract classes and objects * 2
+In which situation is the Observer design pattern most applicable? * When multiple objects need to be changed * When an object requires notifications * When an object changes state * 1
+What does the Observer design pattern primarily ensure in the relationship between subjects and observers? * Independency between subject and observers * Limited extension for observers * Direct subject-observer relationships * 1
+How can the Observer pattern implementation avoid observer-specific update protocols? * By using dangling references * By using explicit modifications * By applying push and pull models * 3
+What is a potential disadvantage of the Observer pattern implementation? * Limited customization * Unexpected updates * Minimal update overhead * 2
+How does the push/pull model address the issues associated with the push model? * By restricting data transmission * By allowing observers to request updates * By simplifying the implementation process * 2
+How should the observer pattern be designed to avoid observer-specific update protocols? * By tightly coupling observers with update protocols * By maintaining a fixed update mechanism * By ensuring both flexibility and adaptability * 3
+In the context of the observer pattern, what is a key advantage of the push/pull model over the push model? * Improved data transmission efficiency * Reduced implementation complexity * Increased observer control over data * 3
