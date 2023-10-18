@@ -51,3 +51,11 @@ The relation between System and Architecture in the second seen diagram is: * 1.
 A set of conventions for constructing, interpreting, using and analyzing one type of Architecture View is a: * Architecture Model * Architecture Viewpoint * Model Kind * 2
 The perspective of one or more stakeholders on how the architecture address specific concerns is a: * Architecture View * Architecture Viewpoint * Model Kind * 1
 Which is the correct order? * Arch. drivers, documentation, design, eval * design, drivers, documentation, eval * drivers, design, documentation, eval * 3
+Which of these isn't a design concern: general, specific, internal, external, issues * internal * external * issues * 2
+What are solution schemas to be personalized and instantiated for the problem/context * design patterns * architectural patterns * patterns * 3
+What is better according to Gang of Four? * interfaces with object composition * interfaces with inheritance * classes with inheritance * 1
+The observer design pattern is * behavioural * structural * creational * 1
+The intent of defining a 1-N dependency between objects to notify the dependents when one object change state is called * state pattern * observer * factory * 2
+In Observer Pattern, who has the attach/detach method * The Observer, together with update * The Subject, together with notify * The Subject, together with update * 2
+Where does the notify method in Observer Pattern * It loops the attached observers and calls their getState * It loops the attached observers and calls their notify * It loops the attached observers and calls their update * 3
+Where is useful, in Observer Pattern, to put a lifespan? * attach * detach * update * 1
