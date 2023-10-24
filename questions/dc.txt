@@ -11,7 +11,6 @@ Which property ensures that even if transactions run concurrently, the system be
 What is the consequence of a network partition in a distributed system, as mentioned in the text? * Partially offline system until the partition is resolved * Inconsistent and stale data * you have a trade off * 3
 Which of the following systems is mentioned as an example of a non-ACID system? * GIT (conflicts) * DNS * both * 3
 When were the ACID properties implemented, even though the acronym was coined later? * In 1983 * In 1973 * In 1999 * 2
-What are the three components of the CAP theorem, and what does each represent? * A - Atomicity, C - Consistency, P - Partition Tolerance * C - Consistency, A - Availability, P - Partition Tolerance * C - Correctness, A - Atomicity, P - Persistence * 2
 What does it mean when a system is said to have "partition tolerance" according to the CAP theorem? * The system remains consistent * The system keeps working even if network messages are dropped * Every request receives a non-error response * 2
 How does the CAP theorem illustrate the trade-offs in distributed systems? * It shows that you can have all properties simultaneously * It shows that achieving one property may come at the expense of the others * It doesn't address trade-offs in distributed systems * 2
 What is an example of a system mentioned in the text that can work with inconsistent functionality? * GIT (conflicts) * Relational databases * Email servers * 1
@@ -45,8 +44,8 @@ How many round trips has Basic Paxos? * 1 * 2 * 3 * 2
 How many round trips has Multi Paxos? * 1 * 2 * 3 * 1
 What happens when an Acceptor fails after accepting? * protocol fails completely * proposer didn't received accepts, so he proposes again * proposer received two accepts: majority is ok! * 3
 What happens when an Acceptor fails before accepting? * We're 2 out of 3 (proposer + other acceptor): majority is ok! * We're 2 out of 3 (two proposers): majority is ok! * proposer has to repeat proposal again * 1
-What happens when an Proposer fails in prepare phase (case seen in lesson)? * protocol fails * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * 2
-What happens when an Proposer fails in accept phase (case seen in lesson)? * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * Specifically Node2 propose B but Node3 lets him know that A has already been proposed * 3
+What happens when a Proposer fails in prepare phase (case seen in lesson)? * protocol fails * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * 2
+What happens when a Proposer fails in accept phase (case seen in lesson)? * Someone, after some time, takes care of it and becomes a proposer * protocol waits for the proposer to re-appear * Specifically Node2 propose B but Node3 lets him know that A has already been proposed * 3
 What happens when you can't accept something in Paxos? * You go with the smallest previous round number * You go with the highest previous round number * You go with the highest round number between the previous one and what you have received * 2
 In Raft, what happens in split vote? * Timeout will take care of removing the stale * A random candidate is chosen as leader * Vote is denied and protocol fails * 1
 What happens in Paxos if Node3, after having accepted proposal by Node1 that now is down, receives a proposal from Node2 with something different? * the protocol fails * it promises because the round number is higher than the previous proposal, but it also adds the info of the previous one * it doesn't promise because it already had a previous promise * 2
@@ -98,11 +97,33 @@ What is the condition for the queue to be in equilibrium in the M/M/1 model? * �
 What does Little's Law in the M/M/1 model define? * The average time spent in the queue * The average queue length * The probability distribution of jobs * 1
 What is the average time spent in the system for an M/M/1 FIFO queue according to the provided text? * λ * (1 - λ) * 1/(1 - λ) * 3
 What is the key property of the M/M/1 queue model as described in the text? * Jobs arrive and are served in a memoryless fashion * Jobs are served based on their priority * Jobs are served sequentially * 1
-According to the M/M/1 model, what is the probability distribution for having x jobs in the queue? * λ^x * (1 - λ)^x * λ/(1 - λ) * 2
-How is the equilibrium probability distribution of the M/M/1 queue model calculated for the system described? * Using exponential functions * Using differential equations * Using probability equations * 3
 According to Little's Law, what does L represent in the context of the M/M/1 model? * Average time spent in the system * Average queue length * Arrival rate of jobs * 2
-What principle does the M/M/1 queue model illustrate with respect to real-world systems, as mentioned in the text? * Memoryless property of jobs * Closed-form formulas for analysis * Insight into long-run behavior * 3
 What is the average time spent in the system for an M/M/1 FIFO queue when the arrival rate (λ) is 0.5? * 1 * 2 * 0.5 * 2
 Leave when (wait till) TT.now().earliest > ? * TT.now().latest chosen at lock acquisition * ts * they're equal * 3
 Avg length of the queue is? * 1/(1-λ) * λ/(1-λ) * (1-λ)^x * 2
 In queueing, if λ = 0.9 i have * 9 jobs before me * w = 10 * both are related * 3
+In a multi-server system, what is the potential advantage of assigning jobs to the least loaded server? * Better load balancing * Faster processing * Reduced latency * 1
+According to Mitzenmacher's findings, what happens to the fraction of queues with at least I jobs when only a small number of servers are queried? * It increases * It decreases * It remains constant * 2
+What is a characteristic of preemptive policies in a system with a mix of small and large jobs? * Prioritization of small jobs * Random processing order * No interruption of running jobs * 1
+Which scheduling technique can minimize the average time spent on processing in a system where job sizes are known? * FIFO * Shortest Remaining Processing Time (SRPT) * Round-robin scheduling * 2
+What potential issue may arise if job size information is incorrect in the SRPT scheduling policy? * System blocking * Increased processing time * Data corruption * 1
+What is a drawback of relying solely on mathematical models for evaluating distributed systems? * Inability to identify real-world problems * Lack of precision * Overemphasis on implementation * 2
+What is one advantage of conducting experiments and measurements on real systems for evaluation purposes? * Lower costs * Scalability * Detailed insights * 3
+Which evaluation method allows for scalable and cost-effective analysis of distributed systems? * Experiments * Simulations * Mathematical models * 2
+What technique can be used to schedule tasks in a system with multiple servers, prioritizing machines with the fewest jobs in queue? * FIFO * Preemption * Supermarket technique * 3
+When estimating job sizes, what is the suggested approach to avoid potential system blockage due to incorrect information? * Prioritize large jobs * Prioritize small jobs * Balance job sizes * 2
+How can we proove that SRPT is better? * By prooving that I can always improve something different * Mathematically * By prooving that there's no starvation * 1
+If I have C0 and C1 as completed times of P0 and P1, what's W roughly? * No point in computing it * I sum the two contributions and I divide by 2 * (C1 - C0) / 2 * 2
+What is the main objective of Erasure Coding in a distributed computing system? * Minimizing data loss * Maximizing data redundancy * Reducing storage costs * 3
+How does the Trivial Solution of data replication work in safeguarding against server failures? * Creating extra data copies * Applying XOR operations * Utilizing linear equations * 1
+In the most basic scenario, what's the calculated redundancy with M=2? * 0.5 * 3 * 2 * 2
+What is the redundancy value in a scenario with N=6 and M=1, using the general Parity technique? * 0.5 * 1 * 1.2 * 3
+What is the redundancy value in a scenario with N=6 and M=2, using the linear oversampling technique? * 0.5 * 1.5 * 1.2 * 2
+What do any K distinct points represent in the Polynomial Oversampling technique? * A single polynomial of degree K-1 * Multiple linear equations * Data encryption keys * 1
+In the context of Polynomial Oversampling, what happens to the size of the numbers in the encoded message compared to the original data? * They remain the same * They decrease, can lead to underflow * They become larger, can lead to overflow * 3
+What are: Associativity, Commutativity, Additive/Multiplicative identity, Distributivity, Add/Mult inverses? * properties of general fields * properties of galois fields * properties of inverse modulo fields * 1
+Why Finite fields are cool? * Because they have associative properties * because they're finite * for log2(n) encoding * 3
+What is the outcome when computing the multiplicative inverse in a modulo p finite field? * A unique value for each element * No multiplicative inverse * Multiple inverse values * 1
+What does the multiplication table modulo m represent in the context of finite fields? * Addition and subtraction rules * Division operations * Multiplication and division operations * 3
+What is the reason behind the proof that there is exactly one multiplicative inverse in modulo p? * Prime numbers properties * Multiplicative identity * Field distribution rules * 1
+What can I do in Erasure Coding if the encoded msg gets bigger when multiplying? * truncate * fields * Galois fields * 3
