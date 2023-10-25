@@ -113,3 +113,12 @@ What is the primary function of a Goal View in the GoReq method? * Structured ta
 How can a goal be described in the Goal Specification process? * Through natural language only * Using UML over the domain model * With a combination of natural language and UML * 3
 What is the main characteristic of an operative goal in the context of the GoReq method? * High-level abstraction * Verifiability and realizability * Direct association with users * 2
 How does the GoReq method propose to handle the specification of non-functional goals? * extending/modifying/annotating the specification of the operative goals that extend * by additional UML diagrams * both * 3
+In the context of UML, what role does the Composite Structure Diagram serve? * It showcases the collaboration between classes * It details the internal structure of multiple classes * It highlights the interactions among interfaces * 2
+How is a connector defined in the context of a Composite Structure Diagram? * It links two classes * It connects parts or roles of a structured class * It defines the relationships among interfaces * 2
+What is the main function of a port in the context of a structured class? * To facilitate internal communication * To define internal constituents * To enable communication with the environment * 3
+What is the purpose of the delegation feature in the context of structured classes? * For communication between class ports and part/role ones * To establish connections between connectors * To enable interactions between parts and roles * 1
+What's the subtle difference between association and connector? * 1 for Class Diagram, 2 for CS Diagram * 1 can be only logical * 2 isn't dashed * 2
+What's the difference between parts (filled line rectangle) and roles (dashed) in CS Diagram? * Interface vs Class * Composition vs Aggregation * Internal vs External * 2
+What is the relationship between the ports of a part and the ports of the enclosed parts/roles in a structured class? * Complementary * Parallel * Isolated * 1
+What does the lollipop notation represent in the context of UML? * Parts within a structured class * Connections between ports * Offered and required interfaces * 3
+What realizes the Offered <<interface>> and <<uses>> the Required <<interface>>? * PortType * Port * PortInterface * 1
