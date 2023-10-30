@@ -122,3 +122,28 @@ What's the difference between parts (filled line rectangle) and roles (dashed) i
 What is the relationship between the ports of a part and the ports of the enclosed parts/roles in a structured class? * Complementary * Parallel * Isolated * 1
 What does the lollipop notation represent in the context of UML? * Parts within a structured class * Connections between ports * Offered and required interfaces * 3
 What realizes the Offered <<interface>> and <<uses>> the Required <<interface>>? * PortType * Port * PortInterface * 1
+How is a tactic structured? * A tree with root as a quality attribute * A tree with leaves the possible decisions to improve that non-funct. req * both * 3
+What is an action or strategy carefully planned to achieve a specific end * Quality attribute * Tactic * Goal * 2
+What embodies experience as decisions? (opposite to patterns, embodying schematic solutions) * Design Patterns * Goals * Tactics * 3
+What are differences between tactics and patterns? * no trade-offs in tactics * context/problem/other design concepts * both * 3
+What's the only true sentence? * Patterns won't capture any tactic * some tactic cannot be expressed by patterns * all tactics can be expressed by patterns * 2
+What is the main purpose of a Deployment diagram in UML? * Defining the execution architecture of systems * Describing user interactions * Organizing system requirements * 1
+What are the primary components of a Deployment diagram? * (Deployed) Targets and Artifacts * Devices and Execution Environments * both * 3
+What is the function of Nodes, more precise elements than deployed target, in a Deployment diagram? * Representing user interfaces * Depicting system artifacts * Representing software execution environments or other sub-types * 3
+How can I express <<artifact>> --> target (parallelepipeds)? * Depicting artifact inside target * Connecting with dependencies optionally stereotyped by <<deploy>> * both * 3
+What is the primary function of a Reference Architecture in software design? * Providing a blueprint for software structures * Ensuring efficient project management * Enforcing coding standards * 1
+When is a Rich Internet Application most suitable for use? * When the rich UI must run inside a browser * When frequent Internet access is not necessary * When limited local resource access is acceptable * 1
+What is a key limitation of Rich Internet Applications? * Unreliable application deployment * Unavailability of plug-in execution environments * Processing in client side * 2
+What is a critical consideration for Mobile Applications in terms of resources? * Limited access to local resources * High dependence on a reliable Internet connection * Continuous access to a plug-in execution environment * 1
+What type of application deployment scenario requires the application to run both online and offline? * Mobile application * Rich client application * Web application * 1
+A reference architecture is: info that provides a set of architectural best practices OR about a specific subject area that guides and constrains the instantiations of multiple architectures and solutions OR about industry best practices f.e specific technologies * defs by, in order: DOD, RUP by IBM, HP * RUP by IBM, DOD, HP * HP, DOD, RUP by IBM * 2
+Suitable when rich UI not required, no install on client, portable UI, Internet required, client-side resource use should be low? * Web app * Rich Internet App * Rich client App * 1
+Suitable when rich UI needed but must run inside a browser, some processing on client side, no-install easy deploy BUT limited access to local resources, loading time non-negligible, Plug-in execution environment may be not available in some platform * Web app * Rich Internet App * Rich client App * 2
+Suitable when want deploy the application on users’ machines, intermittent or no Internet, want highly interactive and responsible app, want to leverage the users machine resources * Rich Internet App * Rich client App * Mob App * 2
+Suitable when want connectivity is unreliable (online and offline randomly) BUT Resources may be limited * Rich Internet App * Rich client App * Mob App * 3
+Which term is used to describe a self-contained piece of software that provides specific functionalities and can be integrated into a designed system with minimal coding? * Software artifact * Software framework * Software product * 3
+What distinguishes a software framework from other library forms? * Default behavior and control * Customizable user code * Modifiable framework code * 1
+What is a consideration when selecting a proper externally developed component? * Type of license and Cost * Code complexity and Learning Curve * Popularity and Project requirements * 1
+What term is used to describe a software abstraction providing generic functionalities that can be changed by additional user-written code? * Software artifact * Software framework * Software library * 2
+What makes a framework different from other library forms? * Inversion of control * Modifiable code * User-specific functionalities * 1
+What are the hidden cons of using frameworks in software development? * Expert requirement and evolution issues * Too freedom in architectural choices * Reduced development effort * 1
