@@ -149,3 +149,34 @@ What is the main purpose of bridges in the Tor network? * Bridges are used to co
 Which messages are encypted by the Tor protocol? * The first communication with the directory server * That + all the others except the one after the Exit Node * All of them * 2
 If I want to start a Tor service I pick some .. points and I build .. between them (so Guard, .. and Exit nodes) * Introduction, links, Relay * Service, circuits, Relay * Introduction, circuits, Relay * 3
 What happens after B advertises his service onto the DDB and A gets these info? * Sets a rendez-vous point and then writes a PK-encrypted listing of that points + a one-time secret * Then asks about an intro point for sending that msg to B, that will retrieve the secret from the rendez-vous point * first and then second one * 3
+How can bridges be discovered and censored? * Through deep packet inspection (DPI) * By scanning IPv4 addresses * both * 3
+What is the main countermeasure to discovering bridges in the Tor network? * Sybil attack detection * Deep packet inspection * Obfuscation, hiding protocol to DPI * 3
+What percentage of Tor bridges were discovered through a complete scan of all IPv4 addresses in 2013, as per Durumeric et al.? * 56% * 86% * 100% * 2
+What is the real-world problem in website fingerprinting within the context of the Tor network? * Fixed message sizes * Higher latencies * Lot and changing websites * 3
+What is the main factor that makes website fingerprinting less efficient in the Tor network? * Varying website sizes * Higher latency and fixed 512B msgs (cells) * both * 2
+What's a technique to identify which website a user is looking at by looking at the sizes and timing of encrypted packages * DPI * Website Fingerprint * pluggable transport * 2
+What's the attack in which an assailant creates a large number of nodes to subvert the system, increasing likelihood of correlating traffic? * Sybil Attack * NSA Attack * Deep Packet Inspection * 1
+What does "Tor Stinks" refer to in the context of NSA's perspective on Tor's security? * Limited success in de-anonymizing Tor users and attacking controlling nodes and exploiting vulnerabilities * Flaws in the Tor network that made a lot of Sybil attacks possible * A successful attack on Tor * 1
+In Sybil Attack with respect to Tor nodes, replicating nodes makes possible for the Attacker to have access to both Guard and Exit Nodes. What's a countermeasure? * fingerprint node behavior (joining, uptime, ..) * DPI * crypting with PUB key * 1
+What was the primary function of the Napster central index server in its file-sharing service? * Routing messages to peers * Aggregating query routing tables * Storing information about available songs * 3
+What was the primary motivation behind creating overlay networks in P2P systems? * To ensure centralized control * To enable copyright protection * To provide scalability and fault tolerance * 3
+How did the Gnutella network handle new query requests initially? * By directly forwarding queries to all neighbors * By routing queries through a central server * By limiting the number of queries sent * 1
+Which application marked the transition to completely decentralized P2P applications following the demise of Napster after its legal problems? * Spotify * Amazon Dynamo * Gnutella * 3
+What has an overlay network where each node is connected to a few others + Bootstrap: each node contacts some services (“caches”) to get some nodes to connect with? * Gnutella * Amazon Dynamo * Napster * 1
+What was the maximum TTL (Time-to-Live) value set for new queries in the Gnutella network? * always 4 * 6, then 4 * 7, then 4 * 3
+How many queries in flooding method for Gnutella searching, that leaded to overloading (before ultrapeers connected with 32+ nodes)? * sum from i = 0 to tte of (5 * 4^i) * of (7 * 4^i) * of (4 * 4^i) * 1
+What did the introduction of Ultrapeers (separated from leaf ones) in Gnutella help address? * Network security concerns * Bandwidth overload for dial-up nodes * Copyright infringement issues * 2
+What information do Ultrapeers, connected with 32+ peers while leaves only with 3, send to their neighbors in Gnutella (only if there's a hope in them having the file)? * Query results * Query routing tables (representation of files that they have) * File availability status (with corresponding probability) * 2
+What are the two main methods associated with Bloom Filters? * test(x) and add(x) * find(x) and insert(x) * search(x) and remove(x) * 1
+When using Bloom Filters, what is the trade-off made regarding the possibility of false positives? * Ensuring a high probability of false negatives * Reducing the space required for data storage * Increasing the likelihood of false negatives * 2
+How many hash functions are typically used in Bloom Filters to map elements to values in a range? * Just one * K different hash functions * K, generable with hi(x) = h(i || x) * 3
+What happens when a Bloom Filter test for an element returns all corresponding bits as 1? * A false positive is identified * A false negative is identified * The element could successfully be retrieved only in this case * 3
+If my query is “foo bar” what do I want in Bloom Filters? * get an answers for files that match with both keywords * we want QRTs to be as small as possible * both * 3
+In Bloom Filters, p(an arbitrary bit is 0) = ? * (1 - 1/m)^(k) * (1 - 1/m)^(nk) * (1 - 1/m)^(n) * 2
+In Bloom Filters, p(an arbitrary bit is 1) = ? * [(1 - 1/m)^(k)] - 1 * (1 - 1/m)^(nk) * 1 - [(1 - 1/m)^(nk)] * 3
+In Bloom Filters, p(false positive) = ? * (p(bit is 1))^k * {1 - [(1 - 1/m)^(nk)]}^k * both * 3
+In Bloom Filters, approx(false positive) = ? * [1 - (1/e)^(nk/m)]^k  * [1 - (1/e)^(nk)]^k * [1 - (1/e)^(nkm)]^k * 1
+What do I obtain putting the derivative of approx(false positive) = 0 ? * optimal k = (mln(2))/n * for the previous k I obtain that p(an arbitrary bit is 1) = 1/2 (GOOD for entropy!) * both are right and we obtain that best is when it's half full and half empty * 3
+If we fix p(false positive) = eps we have: * m = -(nln(eps)/(ln(2)^2) AND, for an error rate of 10%, eps = 0.1 and log10(eps) = −1 we have 15 bits per item! * same as before but 4.79 bits * same but m is wrong because ln(eps) = -(m(ln(2)^2)/n * 2
+What advantage do Bloom Filters offer in the context of databases? * Efficient caching mechanism in RAM * Streamlining access to external disks * Minimizing false negatives in disk searches * 1
+How do Bloom Filters aid in the optimization of web caches? * Avoid storing data requested only once * By accelerating data retrieval from external sources * By reducing the occurrence of false positives * 1
