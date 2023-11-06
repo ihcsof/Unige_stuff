@@ -8,7 +8,7 @@ What is a transaction in the context of this text? * A change in system configur
 What are the ACID properties related to transactions? * Availabilty, Isolation, Durability, Consistency * Atomicity, Consistency, Isolation, Durability * Atomicity, Consistency, Integrity, Durability * 2
 When discussing the ACID property of Atomicity, what does it mean when a transaction is treated as a single unit? * It can be interrupted and resumed later * It succeeds or fails as a whole * It can be divided into smaller units * 2
 Which property ensures that even if transactions run concurrently, the system behaves as if they've been running sequentially? * Atomicity * Durability * Isolation * 3
-What is the consequence of a network partition in a distributed system, as mentioned in the text? * Partially offline system until the partition is resolved * Inconsistent and stale data * you have a trade off * 3
+What is the consequence of a network partition in a distributed system, as mentioned in the text? * Partially offline system until the partition is resolved * Inconsistent and stale data * you have a trade off between 1) and 2) * 3
 Which of the following systems is mentioned as an example of a non-ACID system? * GIT (conflicts) * DNS * both * 3
 When were the ACID properties implemented, even though the acronym was coined later? * In 1983 * In 1973 * In 1999 * 2
 What does it mean when a system is said to have "partition tolerance" according to the CAP theorem? * The system remains consistent * The system keeps working even if network messages are dropped * Every request receives a non-error response * 2
@@ -107,7 +107,7 @@ According to Mitzenmacher's findings, what happens to the fraction of queues wit
 What is a characteristic of preemptive policies in a system with a mix of small and large jobs? * Prioritization of small jobs * Random processing order * No interruption of running jobs * 1
 Which scheduling technique can minimize the average time spent on processing in a system where job sizes are known? * FIFO * Shortest Remaining Processing Time (SRPT) * Round-robin scheduling * 2
 What potential issue may arise if job size information is incorrect in the SRPT scheduling policy? * System blocking * Increased processing time * Data corruption * 1
-What is a drawback of relying solely on mathematical models for evaluating distributed systems? * Inability to identify real-world problems * Lack of precision * Overemphasis on implementation * 2
+What is a drawback of relying solely on mathematical models for evaluating distributed systems? * Overemphasis on real-world problems * Lack of precision * Overemphasis on implementation * 2
 What is one advantage of conducting experiments and measurements on real systems for evaluation purposes? * Lower costs * Scalability * Detailed insights * 3
 Which evaluation method allows for scalable and cost-effective analysis of distributed systems? * Experiments * Simulations * Mathematical models * 2
 What technique can be used to schedule tasks in a system with multiple servers, prioritizing machines with the fewest jobs in queue? * FIFO * Preemption * Supermarket technique * 3
@@ -164,7 +164,7 @@ How did the Gnutella network handle new query requests initially? * By directly 
 Which application marked the transition to completely decentralized P2P applications following the demise of Napster after its legal problems? * Spotify * Amazon Dynamo * Gnutella * 3
 What has an overlay network where each node is connected to a few others + Bootstrap: each node contacts some services (“caches”) to get some nodes to connect with? * Gnutella * Amazon Dynamo * Napster * 1
 What was the maximum TTL (Time-to-Live) value set for new queries in the Gnutella network? * always 4 * 6, then 4 * 7, then 4 * 3
-How many queries in flooding method for Gnutella searching, that leaded to overloading (before ultrapeers connected with 32+ nodes)? * sum from i = 0 to tte of (5 * 4^i) * of (7 * 4^i) * of (4 * 4^i) * 1
+How many queries in flooding method for Gnutella searching, that leaded to overloading (before ultrapeers connected with 32+ nodes)? * sum from i = 0 to tte of (5 times 4^i) * of (7 times 4^i) * of (4 times 4^i) * 1
 What did the introduction of Ultrapeers (separated from leaf ones) in Gnutella help address? * Network security concerns * Bandwidth overload for dial-up nodes * Copyright infringement issues * 2
 What information do Ultrapeers, connected with 32+ peers while leaves only with 3, send to their neighbors in Gnutella (only if there's a hope in them having the file)? * Query results * Query routing tables (representation of files that they have) * File availability status (with corresponding probability) * 2
 What are the two main methods associated with Bloom Filters? * test(x) and add(x) * find(x) and insert(x) * search(x) and remove(x) * 1
@@ -177,6 +177,36 @@ In Bloom Filters, p(an arbitrary bit is 1) = ? * [(1 - 1/m)^(k)] - 1 * (1 - 1/m)
 In Bloom Filters, p(false positive) = ? * (p(bit is 1))^k * {1 - [(1 - 1/m)^(nk)]}^k * both * 3
 In Bloom Filters, approx(false positive) = ? * [1 - (1/e)^(nk/m)]^k  * [1 - (1/e)^(nk)]^k * [1 - (1/e)^(nkm)]^k * 1
 What do I obtain putting the derivative of approx(false positive) = 0 ? * optimal k = (mln(2))/n * for the previous k I obtain that p(an arbitrary bit is 1) = 1/2 (GOOD for entropy!) * both are right and we obtain that best is when it's half full and half empty * 3
-If we fix p(false positive) = eps we have: * m = -(nln(eps)/(ln(2)^2) AND, for an error rate of 10%, eps = 0.1 and log10(eps) = −1 we have 15 bits per item! * same as before but 4.79 bits * same but m is wrong because ln(eps) = -(m(ln(2)^2)/n * 2
+If we fix p(false positive) = eps we have: * m = -(nln(eps)/(ln(2)^2) AND, for an error rate of 10%, eps = 0.1 and log10(eps) = −1 we have 15 bits per item! * same as before but with 4.79 bits per item * same but m is wrong because ln(eps) = -(m(ln(2)^2)/n * 2
 What advantage do Bloom Filters offer in the context of databases? * Efficient caching mechanism in RAM * Streamlining access to external disks * Minimizing false negatives in disk searches * 1
 How do Bloom Filters aid in the optimization of web caches? * Avoid storing data requested only once * By accelerating data retrieval from external sources * By reducing the occurrence of false positives * 1
+why in Bloom Filter the best k is a little bit higher than expected? * due to overflows * due to when it finds already placed ones * due to integer approximation * 2
+The fingerprint of x is placed into one of buckets h1(x) and h2(x). If the buckets are full, then one of the fingerprints in the bucket * is deleted from the cuckoo filter * is evicted using cuckoo hashing and placed into the other bucket where it can go (and so on) * is evicted using cuckoo hashing and placed in a h3 bucket * 2
+Apart from space efficiency, what capability does a cuckoo filter possess that Bloom filters do not? * Deletion of existing items * Efficient item insertion * Low false positive rates * 1
+What key advantage does Distributed Hash Table (DHT) offer? * Improved fault tolerance * Enhanced key-value lookups * Efficient resource allocation * 2
+What is the primary role of Consistent Hashing in the context of DHTs? * adding or removing peers has a small impact on resource allocation * Perfect to handle churn: nodes arriving and leaving all the time * both 1) and 2) * 3
+In the Chord Ring, how is item x stored on a node? * Corresponding to a random identifier * Matching its specific hash value * Determined by the node's predecessor * 2
+How does Chord achieve accelerated lookup in its routing mechanism? * By implementing random node connections * Through the creation of exponential shortcuts * By establishing direct links to all successor nodes * 2
+In Chord's greedy routing, what approach is taken at each step of the lookup process? * Following the closest, but before, finger to the destination * Prioritizing communication with all successor nodes * Randomly selecting a successor at each step * 1
+What is the minimum number of steps required for lookup in Chord, given n total nodes? * O(n)* O(nlogn) * O(log n) * 3
+How does Chord ensure fault tolerance within the system? * By periodically redistributing data among all nodes * Through a comprehensive backup and recovery protocol * By maintaining a list of successor nodes and regular stabilization procedures * 3
+What is the average path length for a system with n=4,096 nodes, according to the Chord architecture? * log2(n)/2=6 * log2(n) * n/2 * 1
+Why the average path length resembles a gaussian? * because half of the time I'll take the before part of the exp result * because half of the time I'll take the after part of the exp result * both means the exact same thing lol * 3
+What is the distinctive feature of the Kademlia DHT architecture that sets it apart from Chord? * Symmetrical links for info of who and when can reach you * Higher fault tolerance capabilities * Reduced average path length for lookup * 1
+How does Kademlia handle the establishment of node connections based on common bits? * By creating multiple intermediary nodes for each connection * Through the utilization of logarithmic routing for each node * By establishing a finger table with specific bit matches in common (like Hamming) * 3
+In what way does the Chord architecture handle the addition of new nodes to the system? * By a lookup followed by taking the right data from both previous and next node * By a lookup followed by taking the right data from next node, and telling the prev to update its cache * By initiating a comprehensive data exchange with multiple nodes * 2
+What key issue does the fault tolerance mechanism in Chord aim to prevent? * Data loss due to node failures * Disruption of the successor chain when no links remain in a node * Excessive resource consumption when too much messages are exchanged * 2
+What purpose does a BitTorrent tracker serve in the system? * Facilitating node discovery, but since 2005's DHT's is no more useful * Seeding the file * Facilitating node discovery * 1
+How are files divided in the BitTorrent system by default? (a node doesn’t report having a piece until it verifies this sized hash) * 128KB * 256KB * 512KB * 2
+What does the "rarest first" piece selection strategy in BitTorrent ensure? * High download speeds * Efficient resource allocation * Retention of rare pieces * 3
+Apart from the "rarest first" strategy, what is the exception for the initial piece selection in BitTorrent? * Fastest first * Largest first * Random first * 3
+What concept in game theory is the "Tit for Tat" strategy in BitTorrent inspired by? * Nash equilibrium * The prisoner's dilemma * The Monty Hall problem * 2
+How does a node confirm that it possesses a specific piece in the BitTorrent system? * By checking its size in .torrent * By verifying its hash in .torrent * By contacting the tracker * 2
+What is included in a .torrent file in the BitTorrent system? * name, size and hashes * name, owner and hashes * name, owner, tracker and hashes * 1
+What are the two main types of nodes in the BitTorrent swarm? * Trackers (node with a full copy of the file, just uploading) and downloaders (nodes that have not finished downloading the file) * Seeds (node with a full copy of the file, just uploading) and downloaders (nodes that have not finished downloading the file) * Servers and clients * 2
+How frequently does the optimistic unchoke strategy provide an upload slot to a random node in BitTorrent? * Every 10 seconds * Every 30 seconds * Every 60 seconds * 2
+Which of the following options best characterizes the behavior of the "Tit for Tat" strategy? * Unpredictable reciprocation * Continuous unchoking * Cooperative retaliation * 3
+What is BitTorrent? * file distribution system * alternative to HTTP and FTP * both * 3
+In the context of BitTorrent, what does "choked" refer to? * Unrestricted connection * Restricted upload (uploaders are not sending data through them) * Restricted download (downloaders are not receiving data through them) * 2
+How many connections are left unchoked by default in the BitTorrent system? * 2 * 4 * 6 * 2
+What is the purpose of the "optimistic unchoking" strategy in BitTorrent? * To hope for the discovery of new, potentially faster connections.* To limit data congestion * To restrict data uploads * 1
