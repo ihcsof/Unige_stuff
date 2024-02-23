@@ -1,0 +1,22 @@
+Project Management is a wide domain of ??, used all over the world to define, program, develop project with different nature and targets * concepts, patterns, tools * concepts, techniques, tools * patterns, techniques, tools * 2
+The ?? methodology focuses on planning and analyzing the projected future in depth even to anticipate the risks * predictive * agile * neither * 1
+In ??, adaptive project management caters to focusing on adapting quickly to changing scope and project reality * predictive * agile * neither * 2
+The ?? method is ideal for projects that have been fully explored on the conceptual level and now only need to be implemented correctly * predictive * agile * neither * 1
+The predictive methodology is highly appropriate when: * The project team is large and remotely distributed * The project development process is documented and shared with all stakeholders * both * 3
+A project is a temporary and unique ?? with two basic characteristics: ?? and ?? * project, economic, technical * enterprise, technical, economic * both * 2
+What are the constraints and methods? * time, budget, scope and agile, lean, design thinking * time, budget, people and agile, lean, design thinking * time, budget, people and agile, lean, predictive * 1
+Why different approches are necessary in innovative projects? * Lack of a successful twin * exploratory and high-uncertainty * both * 3
+What are PBS (WHAT), ABS (HOW), OBS (WHOM) and WBS (COMBINATION); where BS = Breakdown Structure? * Process, Activity, Organisation, Work * Process, Activity, Organisation, Waterfall * Product, Activity, Organisation, Work * 3
+The ?? is the contractual document on which all the PM activities are based: it is the Bible of the project, to be learnt by heart by the PM * Statement of Work * Scenario * WBS and EVA (true profit) * 1
+The ?? is what REMAINS: not the action, but the ?? of the action * target, process * target, result * scenario, result * 2
+The OBS can be ?? (the resources report DIRECTLY to the PM for the whole period) or ?? (the resources are assigned to the project as far as their contribution is required) * strong, weak * strong, light * same * 2
+The depth of the WBS (WBE are leaves) should consider two criteria: * relevance, criticality * coherence, criticality * relevance, consistency * 1
+What's the Control Unit, the deepest detail in which the project should be broken down in order to plan, manage and control it in its aspects (PBS, ABS, Timing, RAM, economical)? * WBE * leaves * Work Package * 3
+Risk Analysis is split in ??  and ??: identification followed by assessment of ?? and ?? * qualitative, quantitative, exposure, impact * quantitative, qualitative, proabability, impact * qualitative, quantitative, proabability, impact * 3
+A Project is the sum of some activities (WBE) linked each others in a time sequence, passing through milestones and timely expressed with GANTT or PERT * true * false * niether * 1
+For better understanding the dependencies from each other of the activities, ?? is more useful. The time flow of the project is better understandable with ??, that is also useful to define critical path. ?? is deterministic, while the other one is statistical (duration determined by best, realistic and worst values) * pert, gantt, gantt * pert, gantt, pert * gantt, pert, gantt * 1
+For each activity (WBS) define the earliest start date and the earliest finish date, the latest start and calculated finish date for each activity, and define how long a task can be delayed before it impacts the planned schedule and threatens the project’s deadline for each activity * It's PMP * CPM * PERT * 2
+The ?? is an essential document that details all the policies, procedures, processes, and other organizational rules that the Project will follow to achieve the Project’s outcomes (often listing other documents) * Project Management Plan * Kick off Meeting * One of the Reports * 1
+What are the atendants of a Kick off Meeting? * stakeholders, team responsibles * human resources, PM staff * all * 3
+What are: Management Assessment, Milestones achievement, 50/50, 0/100, Analytical Analysis? * cost methods, time methods, progress control methods * 3
+For each risk we have: probability, preventive actions, containment actions, ?? (costs added to the project budget for implementing the actions and/or the acceptable, residual risk) * risk themes * contingencies * containements * 2
