@@ -7,11 +7,15 @@ A project is a temporary and unique ?? with two basic characteristics: ?? and ??
 What are the constraints and methods? * time, budget, scope and agile, lean, design thinking * time, budget, people and agile, lean, design thinking * time, budget, people and agile, lean, predictive * 1
 Why different approches are necessary in innovative projects? * Lack of a successful twin * exploratory and high-uncertainty * both * 3
 What are PBS (WHAT), ABS (HOW), OBS (WHOM) and WBS (COMBINATION); where BS = Breakdown Structure? * Process, Activity, Organisation, Work * Process, Activity, Organisation, Waterfall * Product, Activity, Organisation, Work * 3
+To achieve our ?? (the product) we have to produce the objects defined in the ??: the ?? defines the activities to be accomplished to get it. * target, ABS, PBS * project, ABS, PBS * target, PBS, ABS * 3
+What are nature, scope, targets, customer, expectation? * metrics * project's scenario characteristics * project's characteristics * 2
+When is the PM involved in the SOW writing? * always * never * rarely, only if the salesman asks him to participate with the final customer * 3
 The ?? is the contractual document on which all the PM activities are based: it is the Bible of the project, to be learnt by heart by the PM * Statement of Work * Scenario * WBS and EVA (true profit) * 1
 The ?? is what REMAINS: not the action, but the ?? of the action * target, process * target, result * scenario, result * 2
 The OBS can be ?? (the resources report DIRECTLY to the PM for the whole period) or ?? (the resources are assigned to the project as far as their contribution is required) * strong, weak * strong, light * same * 2
-The depth of the WBS (WBE are leaves) should consider two criteria: * relevance, criticality * coherence, criticality * relevance, consistency * 1
-What's the Control Unit, the deepest detail in which the project should be broken down in order to plan, manage and control it in its aspects (PBS, ABS, Timing, RAM, economical)? * WBE * leaves * Work Package * 3
+What is the Responsibilities Assignment Matrix (RAM)? * something more detailed than the OBS * something often used in WPs instead of OBS's * both * 3
+The depth of the WBS managmnent tool (WBE are leaves) should consider two criteria: * relevance, criticality * coherence, criticality * relevance, consistency * 1
+What's the Control Unit, the deepest detail in which the project should be broken down in order to plan, manage and control it in its aspects (PBS, ABS, RAM (instead of OBS) and also timing and economical)? * WBE * leaves * Work Package * 3
 Risk Analysis is split in ??  and ??: identification followed by assessment of ?? and ?? * qualitative, quantitative, exposure, impact * quantitative, qualitative, proabability, impact * qualitative, quantitative, proabability, impact * 3
 A Project is the sum of some activities (WBE) linked each others in a time sequence, passing through milestones and timely expressed with GANTT or PERT * true * false * niether * 1
 For better understanding the dependencies from each other of the activities, ?? is more useful. The time flow of the project is better understandable with ??, that is also useful to define critical path. ?? is deterministic, while the other one is statistical (duration determined by best, realistic and worst values) * pert, gantt, gantt * pert, gantt, pert * gantt, pert, gantt * 1
@@ -27,3 +31,6 @@ Schedule Performance Index (SPI) = ?? * BCWP / BCWS * BCWP / ACWP * BCWP - BCWS 
 Cost Performance Index (CPI) = ?? * BCWP / ACWP * BCWP / BCWS * BCWP - BCWS * 1
 ?? tells how much money must be spent from this point forward, to complete the project, ?? tells what the overall project budget will be if everything else went according to plan * ETC, EAC * EAC, ETC * the same * 1
 What is called a curve with time on x-axis, costs on y-axis and consuntive, preventive, EV? * Estimate Cost * S * the same * 2
+Which are the users involved in the formal reporting document creation? * project sponsors and team project * company executives and team project * the same * 3
+What are: fixed freq, std format, defined metrics and identified responsibilities? * qualities of the project * quality of the PM * quality of the report * 3
+What contains: status, semaphores, milestones, problems, invoices and revenues, costs? * project * kickoff meeting * report format * 3
