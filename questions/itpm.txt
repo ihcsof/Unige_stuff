@@ -34,3 +34,19 @@ What is called a curve with time on x-axis, costs on y-axis and consuntive, prev
 Which are the users involved in the formal reporting document creation? * project sponsors and team project * company executives and team project * the same * 3
 What are: fixed freq, std format, defined metrics and identified responsibilities? * qualities of the project * quality of the PM * quality of the report * 3
 What contains: status, semaphores, milestones, problems, invoices and revenues, costs? * project * kickoff meeting * report format * 3
+We are in a VUCA (??) world, that calls for ?? and ?? * Volatile/Usable/Complex/Ambiguous, Knowledge work, IT domain * the same but the second is Unambiguous * all wrong * 3
+Is INDIVIDUALS AND INTERACTIONS OVER PROCESSES AND TOOLS in the Agile manifesto? * Yes * No, but the opposite * No at all * 1
+Is COMPREHENSIVE DOCUMENTATION OVER WORKING SOFTWARE in the Agile manifesto? * Yes * No, but the opposite * No at all * 2
+Is CONTRACT NEGOTIATION OVER CUSTOMER COLLABORATION in the Agile manifesto? * Yes * No, but the opposite * No at all * 2
+Is RESPONDING TO A CHANGE OVER FOLLOWING A PLAN in the Agile manifesto? * Yes * No, but the opposite * No at all * 1
+Is WORKING SOFTWARE OVER PROCESSES AND TOOLS in the Agile manifesto? * Yes * No, but the opposite * No at all * 3
+Put M if manifacturing or K if knowledge work: visible, less structure with more decisions, focus on the right answers, define the task, autonomy, focus on quality, empirical process * MKMMMKK * MKMMKKK * KKMMKKK * 2
+Agile is a ?? defined by 4 ?? guided by 12 ?? and manifested with many ?? * mindset, principles, values, practices * mindset, practices, values, principles * mindset, values, principles, practices * 3
+Go read the 12 agile principles and table of approaches * Yes * No * No but in third position * 1
+What are PROJECT PURPOSE and WORKING AGREEMENTS (what does DONE mean? How are we working together?) * Predctive agreements * Iterative agreements * Agile agreements * 3
+Are all of these Agile terms?: self-managing teams, specialist generalization, speed as a goal, customer values as a goal * Yes * No, the goal are only the values * No, the goal is only the speed * 2
+What are: cross functional team members, product owner, team facilitator? * agile trubleshooting * agile roles * agile practices * 2
+What are: retrospective&backlog, daily standups, value focused execution (CI, TDD, spikes)? * agile trubleshooting * agile roles * agile practices * 3
+What are: demonstration reviews, planning for iteration to deliver, trubleshooting (from pain points), daily standups * agile trubleshooting * agile roles * agile practices * 3
+What are: DECOMPOSE BACKLOG TO SMALLER & CONCRETE REQUIREMENTS, INVOLVE USERS EARLY AND OFTEN, SPLIT STORIES, PAIR WORK, PERVASIVE TESTING? * agile trubleshooting * agile roles * agile practices * 1
+What are: SELF MANAGEMENT OF THE TEAM, ROBUST DEFINITION OF DONE, SEE OPTIONS FOR VALUE INSTEAD OF DESIGNS, SHORTEN ITERATIONS? * agile trubleshooting * agile roles * agile practices * 1
