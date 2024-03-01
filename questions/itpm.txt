@@ -50,3 +50,21 @@ What are: retrospective&backlog, daily standups, value focused execution (CI, TD
 What are: demonstration reviews, planning for iteration to deliver, trubleshooting (from pain points), daily standups * agile trubleshooting * agile roles * agile practices * 3
 What are: DECOMPOSE BACKLOG TO SMALLER & CONCRETE REQUIREMENTS, INVOLVE USERS EARLY AND OFTEN, SPLIT STORIES, PAIR WORK, PERVASIVE TESTING? * agile trubleshooting * agile roles * agile practices * 1
 What are: SELF MANAGEMENT OF THE TEAM, ROBUST DEFINITION OF DONE, SEE OPTIONS FOR VALUE INSTEAD OF DESIGNS, SHORTEN ITERATIONS? * agile trubleshooting * agile roles * agile practices * 1
+What's a short time interval during which a team conducts research or prototypes on a solution to prove its viability? * milestone * iteration * spike * 3
+Any team larger than 10-20 people and working in multiple locations is a good candidate for a ?? methodology * heavyweight (FDD, DSDM, AUP) * lightweight (XP, LEAN, KANBAN, CRYSTAL, SCRUM) * predictive * 1
+FDD is based on the perspective of features valued by ??. A ?? diagram is used, depicting the quantity of work in a given state * clients, Cumulative Flow * programmers, Cumulative Flow * programmers, CF * 1
+FDD: overall ?? -> feature ?? -> ??, design and build by feature * architecture, list, plan * model, list, plan * model, list, elicit * 2
+What are: DOMAIN OBJECT MODELING, INDIVIDUAL CLASS OWNERSHIP, REGULAR BUILDS? * DSDM principles * AUP practices * FDD practices * 3
+?? is well-suited for long-term projects that continually change and add features in regular, predictable iterations * DSDM * FDD * none of these * 2
+DSDM influenced all Agile's with: * early architectural considerations * agile contracts and suitability filters * both * 3
+What are: FOCUS ON BUSINESS NEEDS, DELIVER ON TIME, BUILD INCREMENTALLY FROM FIRM FOUNDATIONS * DSDM principles * AUP practices * FDD practices * 1
+In AUP, the agile version of ?? there're two types of ??: dev and prod * Rational Unified Process, iterations * RUP, release iteration * the same * 3
+What are: TDD, agile modelling (AM), agile change management, database refactoring? * DSDM principles * AUP practices * FDD practices * 2
+?? is a structured approach for people and organizations which fosters transiction from a current arrangement to a new desired one * agile change management * agile change arrangement * something not suitable for agile * 1
+What are: document continuosly, prioritized and executable reqs as tests, info stored in only one place? * some AM principles * key points of agile modelling, light-weight modelling is missing * both true * 3
+What are: simplicity, communication, feedback and respect? * FDD core values * XP core values * SCRUM core values * 2
+What are: user stories, 2 week long iterations, pair programming, small releases, rigorous testing? * Kanban principles * XP features * SCRUM features * 2
+What are: VISUALIZE THE WORKFLOW, LIMIT WIP (WORK INPROGRESS), MAKE PROCESS POLICIES EXPLICIT? * Kanban principles * XP features * SCRUM features * 1
+IN KANBAN, WHENEVER THERE IS AN EMPTY ?? IT IS A SIGNAL TO ?? WORK FROM PREVIOUS STAGES * slot, push * slot, pull * column, push * 2
+Where can be useful to talk about Little's Law? * Scrum * Crystal * Kanban * 3
+?? is a family of customized methods, which are coded by color names and customized by criticality and team size, covering a wide range of projects * DSDM * AUP * CRYSTAL * 3
