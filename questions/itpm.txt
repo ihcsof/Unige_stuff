@@ -68,3 +68,19 @@ What are: VISUALIZE THE WORKFLOW, LIMIT WIP (WORK INPROGRESS), MAKE PROCESS POLI
 IN KANBAN, WHENEVER THERE IS AN EMPTY ?? IT IS A SIGNAL TO ?? WORK FROM PREVIOUS STAGES * slot, push * slot, pull * column, push * 2
 Where can be useful to talk about Little's Law? * Scrum * Crystal * Kanban * 3
 ?? is a family of customized methods, which are coded by color names and customized by criticality and team size, covering a wide range of projects * DSDM * AUP * CRYSTAL * 3
+What can I use with urgent and complex system, with unknown and changing requirements? * FDD * SCRUM * WATERFALL * 2
+What are: courage, respect, openness, focus and committment? * Scrum values * Scrum principles * Scrum events * 1
+What are: iterative dev, collaboration, certain duration of activities, priorities managm. according to value, process empirical control, self organization? * Scrum values * Scrum principles * Scrum events * 2
+?? are time-boxed iterations with planned durations of meetings (about 30 days) * processes * events * sprints * 3
+A process that repeatably produces acceptable quality is called ??. When this is impossible because of complexity it is necessary to employ ?? * defined process control, empirical process control * empirical process control, defined process control * none * 1
+What are: iteration start, plan and estimate, work, retrospective and release * Scrum phases * Scrum events * Scrum flow * 1
+What are: vision, backlog, sprints, retrospective meeting * Scrum phases * Scrum events * Scrum flow * 3
+The Scrum flow involves starting with a vision provided by the ??, followed by ??, sprint planning meetings, daily scrum meetings, ??, and ?? * product owner, backlog prioritization, retrospective meetings, sprint reviews * product owner, backlog prioritization, sprint reviews, retrospective meetings * none * 2
+What are: product owner, team, scru-masters, (pigs and chickens lol)? * scrum roles * scrum stakeholders * scrum events * 1
+A ?? is a type of ?? (something observed in a scientific investigation, not naturally present but as a result of the investigative procedure) * product backlog, artifact * project backlog, milestone * product backlog, milestone * 1
+A ?? shows the total effort against the amount of work for each iteration * sprint backlog * burndown chart * increment * 2
+What are: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective * scrum roles * scrum stakeholders * scrum events * 3
+In Scrum scaling (multiple teams) we have ??: definition and prioritization of non functional requirements ** prioritization * staging process * synch * 2
+Scrum follows the ?? trend by delegating closest to the work, bypassing the breakdown of central control in complex systems like ?? methodologies * centralization, waterfall * decentralization, waterfall * decentralization, predictive * 2
+scrum shortens the feedback loop between customer and , wish list and ??, investment and ?? * stakeholder, deployment, cost * tester, product, cost * developer, implementation, roi * 3
+Scrum prioritizes delivering the ?? business value defined by the customer, harnessing collective brainpower and empowering ?? to control their destiny * first, teams * highest priority, small teams * highest priority, big teams * 2
