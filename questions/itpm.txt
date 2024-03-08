@@ -22,7 +22,7 @@ For better understanding the dependencies from each other of the activities, ?? 
 For each activity (WBS) define the earliest start date and the earliest finish date, the latest start and calculated finish date for each activity, and define how long a task can be delayed before it impacts the planned schedule and threatens the project’s deadline for each activity * It's PMP * CPM * PERT * 2
 The ?? is an essential document that details all the policies, procedures, processes, and other organizational rules that the Project will follow to achieve the Project’s outcomes (often listing other documents) * Project Management Plan * Kick off Meeting * One of the Reports * 1
 What are the atendants of a Kick off Meeting? * stakeholders, team responsibles * human resources, PM staff * all * 3
-What are: Management Assessment, Milestones achievement, 50/50, 0/100, Analytical Analysis? * cost methods, time methods, progress control methods * 3
+What are: Management Assessment, Milestones achievement, 50/50, 0/100, Analytical Analysis? * cost methods * time methods * progress control methods * 3
 For each risk we have: probability, preventive actions, containment actions, ?? (costs added to the project budget for implementing the actions and/or the acceptable, residual risk) * risk themes * contingencies * containements * 2
 The basic principle of ?? is that the value of the piece of work is equal to the amount of funds budgeted or used to complete it * Earned Value Management * BCWP Management * Both the same * 3
 Schedule Variance (SV) = ?? * BCWP - ACWP * BCWP / ACWP * BCWP - BCWS * 3
@@ -80,14 +80,14 @@ What are: product owner, team, scru-masters, (pigs and chickens lol)? * scrum ro
 A ?? is a type of ?? (something observed in a scientific investigation, not naturally present but as a result of the investigative procedure) * product backlog, artifact * project backlog, milestone * product backlog, milestone * 1
 A ?? shows the total effort against the amount of work for each iteration * sprint backlog * burndown chart * increment * 2
 What are: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective * scrum roles * scrum stakeholders * scrum events * 3
-In Scrum scaling (multiple teams) we have ??: definition and prioritization of non functional requirements ** prioritization * staging process * synch * 2
+In Scrum scaling (multiple teams) we have ??: definition and prioritization of non functional requirements * prioritization * staging process * synch * 2
 Scrum follows the ?? trend by delegating closest to the work, bypassing the breakdown of central control in complex systems like ?? methodologies * centralization, waterfall * decentralization, waterfall * decentralization, predictive * 2
 scrum shortens the feedback loop between customer and , wish list and ??, investment and ?? * stakeholder, deployment, cost * tester, product, cost * developer, implementation, roi * 3
 Scrum prioritizes delivering the ?? business value defined by the customer, harnessing collective brainpower and empowering ?? to control their destiny * first, teams * highest priority, small teams * highest priority, big teams * 2
 Lean in agile context means a subset of lean (originally in ??) called ?? * predictive, lean process * manifacturing, lean product dev * manifacturing, lean process * 2
 What is a continuous design-check process, with extensive use of the web, aimed at adapting the product step by step to the wishes of customers while keeping financial outlays under control * lean * lean start up method * lean product dev * 2
 What are: customer on the center, changes of ideas as a consequence of feedbacks, transforming the idea into a business model? * Lean within the agile mindset * Scrum values * Scrum within the agile mindset * 1
-What are: 1) describes the logic according to which an organization creates, distributes and collects value AND 2) :describes the project justification and includes costs, risks and timelines that serve to verify the ongoing feasibility of the project * business case, business model * two definitions of business model * business model * business case * 3
+What are: 1) describes the logic according to which an organization creates, distributes and collects value AND 2) :describes the project justification and includes costs, risks and timelines that serve to verify the ongoing feasibility of the project * two definitions of business model * business model * business model & case * 3
 ??, going to the next release only after an analysis of customers’ feedbacks, shortening development times through a ?? * It's lean for PM and the words are: Minimum Viable Product, waste reduction * It's lean but the first word is wrong * It isn't lean * 1
 What are: use visual managm. tools, identify customer-defined value, build in learning and continuous improvement * Lean prinicples * Scrum principles * XP principles * 1
 In one of Lean's principles, what does it mean: "What a product is worth to a customer versus possible alternatives" * explanation of "identify customer-defined value" principle * benefits <-> cost * both * 3
