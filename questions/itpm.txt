@@ -76,7 +76,7 @@ A process that repeatably produces acceptable quality is called ??. When this is
 What are: iteration start, plan and estimate, work, retrospective and release * Scrum phases * Scrum events * Scrum flow * 1
 What are: vision, backlog, sprints, retrospective meeting * Scrum phases * Scrum events * Scrum flow * 3
 The Scrum flow involves starting with a vision provided by the ??, followed by ??, sprint planning meetings, daily scrum meetings, ??, and ?? * product owner, backlog prioritization, retrospective meetings, sprint reviews * product owner, backlog prioritization, sprint reviews, retrospective meetings * none * 2
-What are: product owner, team, scru-masters, (pigs and chickens lol)? * scrum roles * scrum stakeholders * scrum events * 1
+What are: product owner, team, scrum-masters, (pigs and chickens lol)? * scrum roles * scrum stakeholders * scrum events * 1
 A ?? is a type of ?? (something observed in a scientific investigation, not naturally present but as a result of the investigative procedure) * product backlog, artifact * project backlog, milestone * product backlog, milestone * 1
 A ?? shows the total effort against the amount of work for each iteration * sprint backlog * burndown chart * increment * 2
 What are: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective * scrum roles * scrum stakeholders * scrum events * 3
@@ -92,3 +92,18 @@ What are: 1) describes the logic according to which an organization creates, dis
 What are: use visual managm. tools, identify customer-defined value, build in learning and continuous improvement * Lean prinicples * Scrum principles * XP principles * 1
 In one of Lean's principles, what does it mean: "What a product is worth to a customer versus possible alternatives" * explanation of "identify customer-defined value" principle * benefits <-> cost * both * 3
 What is the main Lean core concept in the three missing from: team empowerment, fast delivery, whole optimization, decision deferring? * learning amplification * waste elmination * quality in building * 2
+(EXAM) WHAT IS WASTE IN THE LEAN ENVIRONMENT? * ANY ACTION OR STEP IN A PROCESS THAT DOES NOT ADD VALUE TO THE CUSTOMER * ANY PROCESS THAT THE CUSTOMER DOES NOT WANT TO PAY FOR * both * 3
+Organizations adopt design thinking (more mindset than method), a ??-centered process, when they want to answer all the ?? of the change * human, actors * stakeholders, questions * process, rationales * 1
+Innovation is possible via ?? and ?? is a tool that applies to improve project and design management * projectization, scrum * agile methods, design thinking * projectization, design thinking * 3
+Value is: * in the solutions * in the identification of the correct problem * both * 2
+What are: hypothesys-driven process, testing alternative solutions, well defined problem, human centered methodology for solutions around users * scrum 4 values * agile 4 features * design thinking 4 features * 3
+What are: Understand, Observe, Define point of view, Ideate, Prototype, Test, (Reflect) * DT 7 phases * DT 6+1 phases * DT 6 phases * 2
+"If I had an hour to solve a problem, I would spend 55 minutes thinking about the problem and 5 minutes thinking about solutions" is a? * Albert Einstein quote * Design thinking phase 1 (understand) statement * both * 3
+In Design Thinking what are the type of maps for the 4th phase? * mental and conceptual * systemic and giga maps * all four * 3
+Please read the giant set of slides of design thinking, things are missing! * Yes * No * No but in third position * 1
+What's: interactions of components, each satisfying a function, in a larger unit and in its environment * architecture * system * project * 2
+What encourages active looking and learning through the practice of short, simple thinking routines? * Design Thinking * Artful Thinking * both * 2
+What is: becoming sensitive to problems and difficulty; searching for solutions and formulating hypotheses; testing ipotheses, modifying and retesting them; communication? * DT * LEAN * AGILE * 1
+(EXAM) Explain the sentence: I like it, I would like it * it explains the feedback cycle of the topics addressing * it's about the (+1) reflect DT phase: before starting a new cycle we reflect on the direction taken * both * 3
+(EXAM) Comment the 3 areas:LEAN-AGILE-DESIGN THINKING * Three circles with a common intersection * Complementarity(!) derives from the specific benefits of design thinking in the front end of the innovation process combined with the particular benefits of lean startup and agile in the back end * both * 3
+(EXAM) Outline the difference between method and mindset * A mindset is composed by reflections, contextualization of problems and concretization of ideas through prototypes, it's abstract and a method can be then fitted in it * DT is a mindset, finding what is the best solution to solve a challenge. Then lean can be used to find the scope and then agile to implement it * both * 3
