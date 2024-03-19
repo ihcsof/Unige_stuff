@@ -121,3 +121,10 @@ What are: rate of progress, remaining work, likely completion date, likely remai
 Value can be prioritized with ??; an ?? can be created * MoSCoW, milestone * voting, MVP * MoSCoW, MinimumViableProduct * 3
 Value delivery: identify value, prioritize requirements to deliver high value fast (eat your dessert first), deliver the value iteratively for fast ROI, ??, collaborate with stakeholders * receive feedback * document * implement with agile * 1
 Value delivery: identify risks (anti-value) and reduce them, 4every req compare with the whole priority, ?? * experiment early to fail fast and rethink early * track feedback of prioritized values * identify MinmumMarketableFeatures * identify MinimumViableProduct * both * 1
+What are: taking care (STEWARDSHIP, EDUCATE, ENGAGE stakeholders), establishing a shared vision, communication, working collaboratively, interpersonal skills * Scrum values * Stakeholders engagement * Agile principles * 2
+?? refers to the gap between the system's representations and the user's understanding of those representations. When this gap is small, it means the system effectively communicates its state and functions * tulf * gulf * sium * 2
+The agile ?? is one of the first produced documents and it describes goals, contents, approach and authorizations; knowing that scope may change and some aspects may be initially unknown * charter * PMP * value description * 1
+?? and ?? are two main concepts for a shared vision: a list of items must be discussed and checked in a sw project before declaring anything ?? * value, deliverables, done * value, milestones, done * done, deliverables, done * 3
+information ??: agile's umbrella term fir highly visible displays of information (tools, like burn charts, often referred as visual controls, displayed in high traffic areas to maximise exposure for project status to stakeholders) * spreadders * radiators * creators * 2
+What are burn charts * textual representation of work left to do versus time * graphical... * both * 2
+What are: remember the future, prune the product tree, speedboat, buy a feature, bang or the buck * agile principles * agile techniques * innovation games * 3
