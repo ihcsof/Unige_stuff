@@ -128,3 +128,11 @@ The agile ?? is one of the first produced documents and it describes goals, cont
 information ??: agile's umbrella term fir highly visible displays of information (tools, like burn charts, often referred as visual controls, displayed in high traffic areas to maximise exposure for project status to stakeholders) * spreadders * radiators * creators * 2
 What are burn charts * textual representation of work left to do versus time * graphical... * both * 2
 What are: remember the future, prune the product tree, speedboat, buy a feature, bang or the buck * agile principles * agile techniques * innovation games * 3
+In agile workshop we have: * 5 minutes activity of every participang, preventing dominant individuals * brainstorming and innovation games * both * 3
+Agile teams are small and specialists ?? * are preferrable * are not required * cause problems * 3
+Traditional management is based on decision-makers who control the behaviors of the people underneath. Agile Leadership flips the chart upside down focusing on customers at the very top: * agile leader doesn't manage people * all false * it's flipped * 1
+Active listening is: internal, focused (??), global (addition of enviromental indicators) * in the mind of the team * of the speaker * of the leader * 2
+Adaptive leadership styles: ??/storming , storming/??, norming/supporting, performing/delegating * forming, coaching * coaching, forming * forming, forming * 1
+Agile (plan to plan) vs non-agile planning, who has more planning? * agile > waterfall * agile < waterfall * agile = waterfall * 1
+?? is the basic mindset for aglile's continuous improvement (LEARN), opposite to the ?? * Change for better, PDCA * Kaizen, PlanDoCheckAct * same * 3
+?? in IT projects involves iterative cycles of coding with ??, followed by reviews for customer feedback and retrospectives for process refinements, together with the concept of multiple levels of improvement (??) * continuous improvement, pair programming, onion * iterations, pair programming, onion * iterations, meetings, onion * 1
