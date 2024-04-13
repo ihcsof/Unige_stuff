@@ -35,7 +35,16 @@ vector<Question> readQuestionsFromFile(const string& fileName) {
             }
 
             getline(iss, token, '*');
-            question.correctAnswer = stoi(token);
+            try {
+                question.correctAnswer = stoi(token);
+            } catch (const std::invalid_argument& e) {
+                std::cerr << "Invalid argument: " << e.what() << std::endl;
+                cout << "Skipping question: " << question.text << endl;
+            } catch (const std::out_of_range& e) {
+                std::cerr << "Out of range: " << e.what() << std::endl;
+            } catch (const std::exception& e) {
+                std::cerr << "General std::exception: " << e.what() << std::endl;
+            }
 
             questions.push_back(question);
         }
