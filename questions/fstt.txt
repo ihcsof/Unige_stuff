@@ -32,4 +32,39 @@ Gherkin is a ?? ?? language with # comments: a Feature keyword provides high-lev
 Given, When, Then, And, Or, But, Background, Parameters (@Regression, @EndToEnd, ...) are ?? keywords * Gherkin * Selenium * Sium * 1
 To transform WA test cases (e.g ??) in test scripts we need a web framework (e.g ??) * Gherkin, JUnit * Gherkin, Selenium * Plain Text, JUnit * 2
 Which are categories of testing frameworks? * capture/replay to re-execute automatically (e.g. Selenium IDE) * programmable (e.g Selenium WebDriver) * both * 3
-Selenium IDE is a browser extension that records saving infos in a three element json table (command, target, value)
+Selenium IDE is a browser extension that records saving infos in a three element json table (??) * operation, target, value * command, target, value * operation, kind, value * 2
+Selenium WebDriver (simple and uniformed API) is for E2E, browser compatibility, security and performance testing. Even for Mobile testing? * Yes * No, there's Appium * No, there are Selendroid and Appium * 3
+?? allows multiple ways of checking for UIelements using assertions (hard) and verification (soft: the execution continues if fails) * Selenese * Selesium * Selenium language * 1
+Solutions to ?? are: explicit waits, execution speed set, wait for element present / text / visible * failures * concurrencies * delays * 3
+Selenium 4 comes from 3, that comes from 2 (when commands were JSON msgs over HTTP), that comes from a merge between ?? and ?? * 1 and RC * 1 and WebDriver * RC and Webdriver * 3
+WebDriver 4 uses the native support implemented by each browser, so a ?? between the script using the APIs and the browser is needed * API * driver * broker * 2
+Manual driver management is ?? * costly * efficient * reliable * 1
+Selenium WebDriver commands are: ?? (frames, windows, alerts, cookies, driver selection), synch, navigation (get(),..), ?? (FindElement(), ..), manipulation * domain, interrogation * init, query * domain, query * 1
+ChromeDriver is-a ChromiumDriver is-a RemoteWebDriver: selectable with ??("webdriver.chrome.driver", <path>) * System.setProperty * WebDriver = new newChromDriver() * driver.get() * 1
+?? are software utilities used to automate the creation of executable applications from source code, easing the ?? * Build tools, testing or release * Build tools, dependency management * both * 3
+Maven's, config is based on ??, an XML file describing dependencies and libraries, automatically downloading them from remote repo's if not present locally * Gradle * Project Object Model * Document Object Model * 3
+During execution the test script asks to ?? to esolve the driver, that tries to find the browser versions to match it with a driver version, to then export the downloaded driver path with the System property * WebDriverManager * WebDriverSelector * Maven * 1
+Why these people attack systems: Script kiddies, Hacktivists, Cyber-criminals, Cyber-terrorists, Governments * money, cyber-rebellion, cyber-criminality, cyber-terrorism, cyber-warfare * ok but last is politics * ok but first is fun * 3
+What are: Broken access control, Cryptographic failures, Injection, Insecure design, Security misconfiguration, Vulnerable and outdated components, Identification and authentication failures, Software and data integrity failures, Security logging and monitoring failures, Server-Side Request Forgery (SSRF)? * OWASP Top 10 vulnerabilities in order * same but not in order * two are invented * 1
+?? afftected Bash with "I'm using Chrome 30.2" "(){:;};malicious_fun()": the server will remember that info and also run the fun * Shellburst * Shellshock * Shellexploit * 2
+?? leveraged malloc(v + length) trying to access random memory zones * Hearthbleed * Hearthlack * Hearthloss * 1
+Penetration Testing lifecycle: engagement, info gathering, ??, vulnerability assessment, exploitation, reporting * footprinting * scanning * both * 3
+Classical attack activities: info gathering, enumeration, gaining access, ??, maintaining access, covering tracks * injections * privilege escalation * hacking * 2
+Anonymous run a masscan of ?? for specific ports to scan for vulnerabilities to exploit * russian IP space * US IP space * both * 1
+How can a cyber-attacker enter a lan with a firewall? * through the DMZ * from the inside (e.g phishing) * with a nuclear missile * 2
+You're doing pretty well, keep it going! * Let's go! * I'm crying * I'm crying * 1
+Docker key features are: containerization, portability, efficiency, consistency, scalability, resource optimization * Yes, all * No, only first three, other are benefits * No, nothing * 2
+A ?? is a lightweight and standalone executable package and a ?? is a runnable istance of it * Image, Container * Image, VM * Container, Image * 1
+What are: run, ps, stop, rm, images, pull, exec, Dockerfile, build -t <image> ., -i, -t, -d, -p <host_port>:<container_port>, -v <local_dir>:<container_dir>, -e <name>=<val>, -w <working_dir>, network create <name> and then --network=<name>, prune? * Docker stuff * This question is useless * Just to put this stuff * 1
+?? is an open-source container management platform that simplifies Docker container orchestration and management * Portainer * Docker Hub * Kubernetes * 1
+?? is a Java app to enumerate web resources (brute force and list-based scanning), available in headless mode (with no browser) * Dirbuster * WPScan * OpenVAS * 1
+?? is a black box Wordpress vulnerability scanner designed for security professionals and website administrators to assess the security of WordPress installations * Dirbuster * WPScan * OpenVAS * 2
+Is it true that WPScan does vulnerability scan, username enumeration, plugin and theme detection, password attack (brute force and dictionary) and security headers and config checks * Yes * No * Yes but not Password Attack * 1
+?? is a black box Wordpress vulnerability scanner designed for security professionals and website administrators to assess the security of WordPress installations * Dirbuster * WPScan * OpenVAS * 2
+Is it true that OpenVAS has a Comprehensive Vulnerability DB (NetworkVulnTests feed) Detailed Reporting, Integration Capabilities * No * Yes but not the Reporting * Yes * 3
+?? is the web-based graphical interface for ?? (Open source tool that performs scans to identify and assess vulnerabilities) providing a user-friendly platform * Greenbone Security Assistant, WPScan * OpenVAS Dashboard, OpenVAS * Greenbone Security Assistant, OpenVAS * 3
+?? is a framework for pen-test (e.g after finding vulnerabilities with OpenVAS you can setRHOST victim and LHOST attacker and attack) * Metasploit * Tenable Nessus * both match * 3
+HTTP ?? format: POST / HTTP/1.1, then Host, User-Agen, Accept, .., Connection (e.g KeepAlive), Upgrade-Insecure-Requests, Content-Type and Length * request * response * can be both * 1
+HTTP ?? format: HTTP/1.1 200 OK, then Access-Control-Allow-Origin, Connection, Content-Encoding and Type, Date, ETag, Keep-Alive, Last-Modified, Server, Set-Cookie, Transfer-Encoding, Vary, X-Frame-options * request * response * can be both * 2
+With ?? -l 8080 you listen (TCP/UDP traffic), with ?? -v -X HEAD <url> you retrieve content via HTTP * nc, curl * curl, netcat * netstat, curl * 1
+HTTP verbs are: ?? (for retrieving resources by URL), ?? (to send data in body), HEAD, PUT (to upload file to server), DELETE, ?? (query for enabled verbs) * GET, POST, OPTIONS * POST, GET, OPTIONS * POST, GET, ASK * 1
