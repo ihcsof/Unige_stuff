@@ -21,4 +21,15 @@ java.lang.AssertionError: expected:[1] but was:[3] is a ??, java.lang.Arithmetic
 We have: assert[True, False, Equals, ArrayEquals, Same, NotSame, Throws, Timeout, ...] * for float an error (tolerance) can be specified in assertEquals * assertSame check if expected and actual refer to same objects * both are true * 3
 To measure the ?? (how much AUT is tested by testsuite) we need to find a ?? (executed / total, e.g LOCs) * coverage, unit * percentage, indicator * percentage, indicator * 1
 ?? is the process of structuring text that can be interpreted and understood by a generative AI model * Prompt engineering * Natural language eng * AI eng * 1
-
+The challenge of ?? testing is isolating, the challenge of ?? is populating the units with data * unit, integration * integration, unit * unit, unit * 1
+The testing pyramid SHOULD (often it isn't) be: * E2E, then Integration, then Unit * Integration, then Unit, then E2E * Unit, then Integration, then EndToEnd * 1
+Is manual testing (still essential) suitable for regression testing? * Yes * No * Yes but in third position * 2
+A systematic black box approach for E2E testing is: Select user functions (features to test), ?? based on them, build test ??, build multiple test cases for each of them * build conditions, cases * build assertions, scenarios * build conditions, scenarios * 3
+The rule of thumb is to have at least ?? test case for each condition, ?? for each variable * one, two/three * two, two * three, two/three * 1
+?? testing reduces the number of test cases by testing all pairs of values of variables rather than attempting to test all of the combinations * Pairwise * Double * Tabled * 1
+?? testing tests extreme ends between partitions of the input values (Input ?? is divided in partitions created assuming that the SUT will exhibit the same behavior on all) * boundary, domain * E2E, space * E2E, domain * 1
+Gherkin is a ?? ?? language with # comments: a Feature keyword provides high-level description of feature and to group related scenarios * line-oriented, businnes-readable * We can have multiple Scenario under a Feature * both true sentences * 3
+Given, When, Then, And, Or, But, Background, Parameters (@Regression, @EndToEnd, ...) are ?? keywords * Gherkin * Selenium * Sium * 1
+To transform WA test cases (e.g ??) in test scripts we need a web framework (e.g ??) * Gherkin, JUnit * Gherkin, Selenium * Plain Text, JUnit * 2
+Which are categories of testing frameworks? * capture/replay to re-execute automatically (e.g. Selenium IDE) * programmable (e.g Selenium WebDriver) * both * 3
+Selenium IDE is a browser extension that records saving infos in a three element json table (command, target, value)
