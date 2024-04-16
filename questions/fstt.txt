@@ -1,0 +1,24 @@
+?? testing points to detect software defects with a systematic approach, ?? testing checks whether the application or  the product is secured or not * Functional, Security * the opposite * none * 1
+What targets Functional Testing? * usability * correctness * security * 2
+Goals of sw testing are: expose and eliminate bugs asap, ??, increase sw reliability * prove correctness * increase confidence in correctness * prove usability * 2
+What are: testing of single function, of group of units, of the whole system in real conditions? * Integration, E2E, Unit * Unit, E2E, Integration * Unit, Integration, E2E * 3
+What are: hiding complexity of backend system, uniformed interface, automation with front-end framework, useful for regression testing * Pros of E2E Testing * Cons of E2E Testing * Cons of Integration Testing * 1
+What are: time consuming to run, prone to non-determinism problems and fragility (expensive to mantain), can't pinpoint the root of the failure * Pros of E2E Testing * Cons of E2E Testing * Cons of Integration Testing * 2
+The goal of ?? testing is to ensure that previously developed and tested code still functions as expected after new changes * integration * re- * regression * 3
+What is: a set of inputs (test) data, preconditions and expected outcomes developed for a particular objective? * test case * test suite (a collection of test cases) * testing framework * 1
+?? box is usually based on code/models (eg code coverage), ??? box is usually based on requirements or expectations * black, white * white, black * white, white * 2
+A ?? for a web app is set of actions (??) + inputs (??) done on a ?? to verify it works as expected * test case, steps, data, AUT * cases, steps, data, system * framework, steps, data, AUT * 1
+A ?? is a set of commands in a programming language, executed by a ?? on the AUT, using ?? * test script, testing framework, white box * unit test, framework, assertion * test script, testing framework, assertion * 3
+In ?? devs commit on repo, that triggers smoke unit tests. Then test (e.g WebDriver), Staging (Replica Prod) and Producion (manual) follows * Modern dev process * Continuous Integration and Delivery (CI/CD) * both * 3
+?? page web apps (modern) uses JSON/XML dynamic data to upload the page, after AJAX calls * Multi * Single * Async * 2
+For SPA's we use Ajax, that uses ?? with registered callbacks * XMLHttpRequest * JsonRequest * RESTRequest * 1
+VS code (code-platform, language-agnostic and ?? code editor) has: activity bar, project's view, command palette (??) * lightweight, ctrl-f * heavyweight, ctrl-f * lightweight, ctrl-p * 3
+For testing Web Apps we need a testing framework for each language (e.g ?? is a java framework = set of classes and ?? to use them) *  JUnit, conventions * Selenium, conventions * JUnit, annotations * 1
+import org.junit.jupiter.api.Test public class CalcTest { ?? public void testSum()... * @Test * //Case * Case * 1
+Test script strucutre is? * Setup, Exercise, Teardown, Verify (assert) * Setup, Exercise, Verify, Teardown * Setup, Verify, Exercise, Teardown * 2
+java.lang.AssertionError: expected:[1] but was:[3] is a ??, java.lang.ArithmeticException: / by zero is a ?? * Error, Failure * Errors * Failure, Error * 3
+@BeforeAll, ??, @Test, @AfterEach, @BeforeEach, @Test@, ??, ?? * @BeforeEach, @AfterEach, @AfterAll * BeforeEach is used to init the objects to test (setup), AfterEach is used to release resources (teardown) * both true sentences * 3
+We have: assert[True, False, Equals, ArrayEquals, Same, NotSame, Throws, Timeout, ...] * for float an error (tolerance) can be specified in assertEquals * assertSame check if expected and actual refer to same objects * both are true * 3
+To measure the ?? (how much AUT is tested by testsuite) we need to find a ?? (executed / total, e.g LOCs) * coverage, unit * percentage, indicator * percentage, indicator * 1
+?? is the process of structuring text that can be interpreted and understood by a generative AI model * Prompt engineering * Natural language eng * AI eng * 1
+
