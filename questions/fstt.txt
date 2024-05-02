@@ -68,3 +68,21 @@ HTTP ?? format: POST / HTTP/1.1, then Host, User-Agen, Accept, .., Connection (e
 HTTP ?? format: HTTP/1.1 200 OK, then Access-Control-Allow-Origin, Connection, Content-Encoding and Type, Date, ETag, Keep-Alive, Last-Modified, Server, Set-Cookie, Transfer-Encoding, Vary, X-Frame-options * request * response * can be both * 2
 With ?? -l 8080 you listen (TCP/UDP traffic), with ?? -v -X HEAD <url> you retrieve content via HTTP * nc, curl * curl, netcat * netstat, curl * 1
 HTTP verbs are: ?? (for retrieving resources by URL), ?? (to send data in body), HEAD, PUT (to upload file to server), DELETE, ?? (query for enabled verbs) * GET, POST, OPTIONS * POST, GET, OPTIONS * POST, GET, ASK * 1
+In Selenium API we have these locators: By.id (most robust), By.name and ?? ("/html/input[1]" or "//.." for relative paths) * By.class * By.XPath * By.css * 2
+How to select b2 with XPath? * /html/body/div[1]/input[2] * /html/body/div[2] * //div[2]/input[2] * 3
+How to set a custom header in php? * header('X-mycustomheader: foo'); * custom('X-mycustomheader: foo'); * customheader('X-mycustomheader: foo'); * 1
+What are method to make HTTP stateful? * cookies with if(isset($_GET['user'])) setcookie('usercookie', $_GET['user']) and then if(isset($_COOKIE['usercookie'])) $user = $_COOKIE['usercookie'] * the same with $_SESSION * both * 3
+What is the wrong sentence? * hash is a one-way function * reverse function of hashes exists * Maps a wide input to a fixed length output * 2
+hash can be cracked with brute-force, dictionary-attacks and rainbow-tables. How to protect from rainbow-table? * use the salt * generate a uniique string to be added to each password before the hashing * both the same * 3
+Is it possible to verify if two users use the same password? * Yes, always * No, never * No, if a salt is used * 3
+What you use for: real-time network packet capture, DPI, data export in packet capture (PCAP) format, protocol dev? * Wireshark * Burp Suite * OpenVAS * 1
+What you use for: security testing for finding and exploiting vulnerabilities in webapp, including a proxy feature (intercept and modify HTTP/s traffic between browser and target)? * Wireshark * Burp Suite * OpenVAS * 2
+What are "close the current window, quitting the browser if it was the last" and "close the driver and all its windows"? * Selenium's quit and close * close and quit * none * 2
+A ?? is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element if not available (default = 0) * implicit wait * explicit * fluent * 1
+A ?? is an intelligent wait confined to a particular element (telling WebDriver to wait for X units of time before giving up). With fluent you can specify the polling frequency * implicit wait * explicit * fluent * 2
+If an explicit wait fails, instead of throwing an exception of a WebDriver as for implicit ones, it throws a timeout exception itself (more manageable) * True * False * True, but it's fluent wait * 1
+How to avoid duplication of locators and code across test scripts, introducing a level of abstraction between test scripts and web pages with the aim of reducing the coupling among them? * Project Object Model * Page Object Model * Document Object Model * 2
+Can an assert be found in a page using Page Object Model? * Yes * No, only By elements * No, only By elements and interaction methods * 3
+Action methods should return POs (if any): when you ‘navigate’ you should return a PO for the ?? * current page * next page * previous page * 2
+In Page Object Model you can factorize common components of a page in a ?? * PO component * PO container with PO components * PO box with PO components * 2
+The ?? is a a graph where from a page it is possible to navigate in another (if it exists a PO method) * Page Object Model * Page Object Pattern * Page Object Graph * 2
