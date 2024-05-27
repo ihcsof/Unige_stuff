@@ -28,7 +28,7 @@ A systematic black box approach for E2E testing is: Select user functions (featu
 The rule of thumb is to have at least ?? test case for each condition, ?? for each variable * one, two/three * two, two * three, two/three * 1
 ?? testing reduces the number of test cases by testing all pairs of values of variables rather than attempting to test all of the combinations * Pairwise * Double * Tabled * 1
 ?? testing tests extreme ends between partitions of the input values (Input ?? is divided in partitions created assuming that the SUT will exhibit the same behavior on all) * boundary, domain * E2E, space * E2E, domain * 1
-Gherkin is a ?? ?? language with # comments: a Feature keyword provides high-level description of feature and to group related scenarios * line-oriented, businnes-readable * We can have multiple Scenario under a Feature * both true sentences * 3
+Gherkin is a ?? ?? language with # comments: a Feature keyword provides high-level description of feature and to group related scenarios * line-oriented, businnes-readable * We can have multiple Scenario under a Feature * both true sentences * 3 
 Given, When, Then, And, Or, But, Background, Parameters (@Regression, @EndToEnd, ...) are ?? keywords * Gherkin * Selenium * Sium * 1
 To transform WA test cases (e.g ??) in test scripts we need a web framework (e.g ??) * Gherkin, JUnit * Gherkin, Selenium * Plain Text, JUnit * 2
 Which are categories of testing frameworks? * capture/replay to re-execute automatically (e.g. Selenium IDE) * programmable (e.g Selenium WebDriver) * both * 3
@@ -40,9 +40,9 @@ Selenium 4 comes from 3, that comes from 2 (when commands were JSON msgs over HT
 WebDriver 4 uses the native support implemented by each browser, so a ?? between the script using the APIs and the browser is needed * API * driver * broker * 2
 Manual driver management is ?? * costly * efficient * reliable * 1
 Selenium WebDriver commands are: ?? (frames, windows, alerts, cookies, driver selection), synch, navigation (get(),..), ?? (FindElement(), ..), manipulation * domain, interrogation * init, query * domain, query * 1
-ChromeDriver is-a ChromiumDriver is-a RemoteWebDriver: selectable with ??("webdriver.chrome.driver", <path>) * System.setProperty * WebDriver = new newChromDriver() * driver.get() * 1
+ChromeDriver, that is a ChromiumDriver, that is a RemoteWebDriver: selectable with ??("webdriver.chrome.driver", <path>) * System.setProperty * WebDriver = new newChromDriver() * driver.get() * 1
 ?? are software utilities used to automate the creation of executable applications from source code, easing the ?? * Build tools, testing or release * Build tools, dependency management * both * 3
-Maven's, config is based on ??, an XML file describing dependencies and libraries, automatically downloading them from remote repo's if not present locally * Gradle * Project Object Model * Document Object Model * 3
+Maven's, config is based on ??, an XML file describing dependencies and libraries, automatically downloading them from remote repo's if not present locally * Gradle * Project Object Model * Document Object Model * 2
 During execution the test script asks to ?? to esolve the driver, that tries to find the browser versions to match it with a driver version, to then export the downloaded driver path with the System property * WebDriverManager * WebDriverSelector * Maven * 1
 Why these people attack systems: Script kiddies, Hacktivists, Cyber-criminals, Cyber-terrorists, Governments * money, cyber-rebellion, cyber-criminality, cyber-terrorism, cyber-warfare * ok but last is politics * ok but first is fun * 3
 What are: Broken access control, Cryptographic failures, Injection, Insecure design, Security misconfiguration, Vulnerable and outdated components, Identification and authentication failures, Software and data integrity failures, Security logging and monitoring failures, Server-Side Request Forgery (SSRF)? * OWASP Top 10 vulnerabilities in order * same but not in order * two are invented * 1
@@ -60,7 +60,7 @@ What are: run, ps, stop, rm, images, pull, exec, Dockerfile, build -t <image> .,
 ?? is a Java app to enumerate web resources (brute force and list-based scanning), available in headless mode (with no browser) * Dirbuster * WPScan * OpenVAS * 1
 ?? is a black box Wordpress vulnerability scanner designed for security professionals and website administrators to assess the security of WordPress installations * Dirbuster * WPScan * OpenVAS * 2
 Is it true that WPScan does vulnerability scan, username enumeration, plugin and theme detection, password attack (brute force and dictionary) and security headers and config checks * Yes * No * Yes but not Password Attack * 1
-?? is a black box Wordpress vulnerability scanner designed for security professionals and website administrators to assess the security of WordPress installations * Dirbuster * WPScan * OpenVAS * 2
+?? is a black box Wordpress vulnerability scanner designed for security professionals and website administrators to assess the security of WordPress installations * Dirbuster * WPScan * SQLMap * 2
 Is it true that OpenVAS has a Comprehensive Vulnerability DB (NetworkVulnTests feed) Detailed Reporting, Integration Capabilities * No * Yes but not the Reporting * Yes * 3
 ?? is the web-based graphical interface for ?? (Open source tool that performs scans to identify and assess vulnerabilities) providing a user-friendly platform * Greenbone Security Assistant, WPScan * OpenVAS Dashboard, OpenVAS * Greenbone Security Assistant, OpenVAS * 3
 ?? is a framework for pen-test (e.g after finding vulnerabilities with OpenVAS you can setRHOST victim and LHOST attacker and attack) * Metasploit * Tenable Nessus * both match * 3
@@ -69,13 +69,13 @@ HTTP ?? format: HTTP/1.1 200 OK, then Access-Control-Allow-Origin, Connection, C
 With ?? -l 8080 you listen (TCP/UDP traffic), with ?? -v -X HEAD <url> you retrieve content via HTTP * nc, curl * curl, netcat * netstat, curl * 1
 HTTP verbs are: ?? (for retrieving resources by URL), ?? (to send data in body), HEAD, PUT (to upload file to server), DELETE, ?? (query for enabled verbs) * GET, POST, OPTIONS * POST, GET, OPTIONS * POST, GET, ASK * 1
 In Selenium API we have these locators: By.id (most robust), By.name and ?? ("/html/input[1]" or "//.." for relative paths) * By.class * By.XPath * By.css * 2
-How to select b2 with XPath? * /html/body/div[1]/input[2] * /html/body/div[2] * //div[2]/input[2] * 3
+How to select the second input inside the second div with XPath? * /html/body/div[1]/input[2] * /html/body/div[2] * //div[2]/input[2] * 3
 How to set a custom header in php? * header('X-mycustomheader: foo'); * custom('X-mycustomheader: foo'); * customheader('X-mycustomheader: foo'); * 1
 What are method to make HTTP stateful? * cookies with if(isset($_GET['user'])) setcookie('usercookie', $_GET['user']) and then if(isset($_COOKIE['usercookie'])) $user = $_COOKIE['usercookie'] * the same with $_SESSION * both * 3
 What is the wrong sentence? * hash is a one-way function * reverse function of hashes exists * Maps a wide input to a fixed length output * 2
 hash can be cracked with brute-force, dictionary-attacks and rainbow-tables. How to protect from rainbow-table? * use the salt * generate a uniique string to be added to each password before the hashing * both the same * 3
 Is it possible to verify if two users use the same password? * Yes, always * No, never * No, if a salt is used * 3
-What you use for: real-time network packet capture, DPI, data export in packet capture (PCAP) format, protocol dev? * Wireshark * Burp Suite * OpenVAS * 1
+What you use for: real-time network packet capture, DPI, data export in packet capture (PCAP) format, protocol dev? * Wireshark * SQLMap * OpenVAS * 1
 What you use for: security testing for finding and exploiting vulnerabilities in webapp, including a proxy feature (intercept and modify HTTP/s traffic between browser and target)? * Wireshark * Burp Suite * OpenVAS * 2
 What are "close the current window, quitting the browser if it was the last" and "close the driver and all its windows"? * Selenium's quit and close * close and quit * none * 2
 A ?? is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element if not available (default = 0) * implicit wait * explicit * fluent * 1
@@ -86,3 +86,22 @@ Can an assert be found in a page using Page Object Model? * Yes * No, only By el
 Action methods should return POs (if any): when you ‘navigate’ you should return a PO for the ?? * current page * next page * previous page * 2
 In Page Object Model you can factorize common components of a page in a ?? * PO component * PO container with PO components * PO box with PO components * 2
 The ?? is a a graph where from a page it is possible to navigate in another (if it exists a PO method) * Page Object Model * Page Object Pattern * Page Object Graph * 2
+?? are malicious scripts that, once uploaded to a web server, give attackers remote access. They facilitate data theft, command execution and ensuring persistent access, and are typically introduced through exploits like SQL injections, FTP vulnerabilities, or by brute-forcing credentials. Detecting them is challenging due to their ability to camouflage within legitimate files and their minimal digital footprint. Implementing security measures like regular code audits, using web application firewalls, and enforcing strict access controls can help mitigate the risk * web shells * web scripts * injections * 1
+How to avoid system commad execute what was sent in a form? e.g system("ping -c 3".XXX($_GET['host'])) * htmlspecialchars * escape * escapeshellcmd * 3
+Are bad argument attacks (arg injection) possible in ping? * Yes, always * Yes, but only without escapeshellcmd * Never: it's command dependant and ping does not have parameters like -name where you can inject something besides escapeshellcmd. You can, for example, with find * 3
+Is escapeshellcmd to escape find? * Yes * No, you need escapeshellarg * No, you need preg_replace, shell_exec or passthru, instead of system, as inner code injection approach * 2
+?? is a versatile tool designed for the rapid creation and management of web shells. Key features are persistent backdoor functionality, support for exporting files, execute SQL queries and create tunnels to exploit targets * OpenVAS * Weevely * Dirbuster * 2
+What is presenceOfElementLocated? * An expected condition for Explicit Waits * An expected condition for Implicit Waits * both * 1
+Selenium WebDriver's ?? class, utilizing the ?? pattern, allows for the chaining of multiple keyboard and mouse actions, which are executed simultaneously with the `build().perform()` method. * Select, builder * Select, performer * Actions, builder * 3
+What are: ' OR 'a'='a ; ' UNION SELECT pwd FROM stud WHERE 'a'='a ; check if the second character of a pwd is 'e' * boolean, UNION, time SQL injections * UNION, time, boolean SQL injections *  time, UNION, boolean SQL injections * 1
+How to protect connection details in Apache2? * using preparred statements like prepare, bind_param and execute * PHP PDOs * php_value mysql.default.password password and so on in httpd.conf and then mysqli_connect(ini_get("...")) * 3
+Three approaches for browser compatibility test are: ?? (for few configs), Selenium Grid (a smart proxy server that makes possible to run tests in parallel on multiple machines), ?? (e.g lambdaTest, using Selenium Grid under the hood) * Selenium Webdriver, Cloud-based platforms, LambdaTest * Selenium Webdriver, Cloud-based platforms, SmartBear * both * 3
+What does have VM to test on combinations of OS, browsers and versions; and also allows real time and browser screenshot tests? * Selenium WD * Lambda Test * Selenium Grid * 2
+What uses a baseline for a webpage? * A Lambda test feature * gold standard for visually comparing subsequent versions of the same webpage, to highlight differences for regression and browser compatibility test * both * 3
+?? is a vulnerability which provides an attacker the ability to control the content of a web app * XSS * Cross site scripting * both * 3
+Unfiltered user input, used to build a displayed output, generates... * XSS attacks * ddos attacks * both * 1
+Types of XSS attacks are? * reflected and obfuscated * reflected and persistent * persistent and obfuscated * 2
+Types of denial of service attacks are? * exploit-based and flooding-based * exploiting with few "bad messages" and sending multiple ones * second are the definitions of the first * 3
+How does a syn flood dos attack work? * you send tons of syn's to lure the server to allocate corresponding resources * you spoof different ip's to use different source ip's in syn's * both are true sentences * 3
+What are dos attacks that target the application layer in the same way syn dos do with transport layer? * ddos attacks * slowdos * session attacks * 2
+A slow DoS attack gradually depletes server resources by keeping connections open for extended periods (like 300s), making the SPECIFIC SERVICE (and not all the server as for the syn one) unavailable * ddos attacks * slowdos * session attacks * 2
